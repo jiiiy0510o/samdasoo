@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>제주삼다수</title>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="logo"><img src="/img/logo.png" alt="삼다수 로고" /></div>
+        <div class="menu"><img src="/img/menu_b.png" alt="메뉴바" /></div>
+      </nav>
+      <ul class="scrollView">
+        <li class="scroll">
+          <div class="text">
+            <p>THE WATER</p>
+            <h6>깨끗하고, 건강하고, 맛있는 물</h6>
+          </div>
+          <div class="bigText">
+            <p>BETTER</p>
+            <p>CHOICE</p>
+          </div>
+          <img src="/img/samdasoo.png" alt="삼다수" />
+        </li>
+        <li class="scroll">
+          <div class="text">
+            <p>ONLY ONE</p>
+            <h6>진정한 제주다움 실현</h6>
+          </div>
+          <div class="bigText">
+            <p>JEJU</p>
+            <p>SAMDASOO</p>
+          </div>
+        </li>
+        <li class="scroll">
+          <div class="text">
+            <p>SUSTAINABLE</p>
+            <h6>제주의 청정 자연과 공존하는 제주 삼다수</h6>
+          </div>
+          <div class="bigText">
+            <p>ECO</p>
+            <p>FRIENDLY</p>
+          </div>
+        </li>
+        <li class="scroll"></li>
+      </ul>
+    </div>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        let view = document.querySelectorAll(".scroll");
+        let logoImg = document.querySelector(".logo");
+        let menuImg = document.querySelector(".menu");
+
+        view.forEach(function (view, index) {
+          let viewHeight = view.offsetHeight;
+          let scrollPosition = window.scrollY;
+          console.log(scrollPosition);
+          let page = Math.floor(scrollPosition / viewHeight);
+
+          if (page >= 1) {
+            logoImg.innerHTML = `<img src="/img/foot_logo.png" alt="삼다수 로고" />`;
+            menuImg.innerHTML = `<img src="/img/menu_w.png" alt="메뉴바" />`;
+          } else {
+            logoImg.innerHTML = `<img src="/img/logo.png" alt="삼다수 로고" />`;
+            menuImg.innerHTML = `<img src="/img/menu_b.png" alt="메뉴바" />`;
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
