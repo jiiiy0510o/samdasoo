@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>제주삼다수</title>
     <link rel="stylesheet" href="/css/main.css" />
+    <script src="https://kit.fontawesome.com/06a873e6b2.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="container">
       <nav>
         <div class="logo"><img src="/img/logo.png" alt="삼다수 로고" /></div>
+
         <div class="menu"><img src="/img/menu_b.png" alt="메뉴바" /></div>
       </nav>
       <ul class="scrollView">
@@ -46,6 +48,34 @@
         </li>
         <li class="scroll"></li>
       </ul>
+      <ul class="pageMark">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <footer>
+        <ul>
+          <li>개인정보처리방침</li>
+          <li>저작권보호정책</li>
+        </ul>
+        <address>
+          <p>
+            제주특별자치도 제주시 조천읍 남조로 1717-35 대표전화 : (064)780-3300, (국번없이)1636 (제주개발공사 또는
+            삼다수를 말하세요) 팩스 : (064)784-5020
+          </p>
+        </address>
+        <div class="copyright">Copyright© 2018 제주특별자치도개발공사. All Rights Reserved.</div>
+        <div class="logo">
+          <img src="/img/foot_logo.png" alt="하단로고" />
+        </div>
+        <ul class="sns">
+          <li><i class="fa-brands fa-youtube"></i></li>
+          <li><i class="fa-brands fa-facebook"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+          <li><i class="fa-brands fa-neos"></i></li>
+        </ul>
+      </footer>
     </div>
 
     <script>
@@ -53,13 +83,13 @@
         let view = document.querySelectorAll(".scroll");
         let logoImg = document.querySelector(".logo");
         let menuImg = document.querySelector(".menu");
+        let samdasoo = document.querySelector(".bigText + img");
+        let pageMarks = document.querySelectorAll(".pageMark li");
+        let scrollPosition = window.scrollY;
 
-        view.forEach(function (view, index) {
+        view.forEach(function () {
           let viewHeight = view.offsetHeight;
-          let scrollPosition = window.scrollY;
-          console.log(scrollPosition);
           let page = Math.floor(scrollPosition / viewHeight);
-
           if (page >= 1) {
             logoImg.innerHTML = `<img src="/img/foot_logo.png" alt="삼다수 로고" />`;
             menuImg.innerHTML = `<img src="/img/menu_w.png" alt="메뉴바" />`;
@@ -67,7 +97,24 @@
             logoImg.innerHTML = `<img src="/img/logo.png" alt="삼다수 로고" />`;
             menuImg.innerHTML = `<img src="/img/menu_b.png" alt="메뉴바" />`;
           }
+
+          if (scrollPosition > 1900) {
+            samdasoo.classList.add("active");
+            samdasoo.style.opacity = 0;
+          } else {
+            samdasoo.style.animationDirection = "reverse";
+            samdasoo.style.opacity = 1;
+          }
         });
+
+        // pageMarks.forEach(function (pageMark) {
+        //   console.log(pageMark);
+        //   if (page >= 1) {
+        //     pageMark.style.borderColor = "#fff";
+        //   } else {
+        //     pageMark.style.borderColor = "#0066ff";
+        //   }
+        // });
       });
     </script>
   </body>

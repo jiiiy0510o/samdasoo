@@ -9,13 +9,15 @@ body {
     list-style: none;
   }
   .container {
+    position: relative;
     nav {
+      z-index: 3;
       position: fixed;
       width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 50px 160px;
+      padding: 50px 180px;
       box-sizing: border-box;
       .logo img {
         width: 200px;
@@ -25,7 +27,8 @@ body {
       }
     }
     ul {
-      li {
+      position: relative;
+      &.scrollView li {
         box-sizing: border-box;
         padding: 150px;
         height: 100vh;
@@ -60,10 +63,24 @@ body {
           }
           img {
             position: fixed;
-            width: 200px;
+            width: 240px;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            &.active {
+              animation: samdasooHide 2s;
+            }
+          }
+          @keyframes samdasooHide {
+            0% {
+              opacity: 1;
+            }
+            50% {
+              opacity: 0.5;
+            }
+            100% {
+              opacity: 0;
+            }
           }
         }
         &:nth-child(2) {
@@ -82,6 +99,52 @@ body {
           background-image: url("/img/bottom_bg.jpg");
           background-size: cover;
         }
+      }
+      &.pageMark {
+        position: fixed;
+        top: 50%;
+        right: 120px;
+        transform: translateY(-50%);
+        li {
+          width: 14px;
+          height: 14px;
+          border-radius: 50%;
+          border: 1px solid #0066ff;
+          margin-bottom: 24px;
+          &.active {
+            background-color: #0066ff;
+          }
+        }
+      }
+    }
+    footer {
+      color: #fff;
+      background-color: #111;
+      padding: 50px 180px;
+      position: relative;
+      ul {
+        display: flex;
+        gap: 12px;
+        padding: 20px 0;
+        &.sns {
+          position: absolute;
+          right: 180px;
+          top: 50px;
+          li {
+            font-size: 1.4rem;
+          }
+        }
+      }
+      address,
+      .copyright {
+        padding: 4px 0;
+      }
+      img {
+        position: absolute;
+        left: 50%;
+        bottom: 50px;
+        transform: translateX(-50%);
+        width: 300px;
       }
     }
   }

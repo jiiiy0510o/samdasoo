@@ -140,13 +140,17 @@ body li {
   padding: 0;
   list-style: none;
 }
+body .container {
+  position: relative;
+}
 body .container nav {
+  z-index: 3;
   position: fixed;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 160px;
+  padding: 50px 180px;
   box-sizing: border-box;
 }
 body .container nav .logo img {
@@ -155,59 +159,122 @@ body .container nav .logo img {
 body .container nav .menu img {
   width: 30px;
 }
-body .container ul li {
+body .container ul {
+  position: relative;
+}
+body .container ul.scrollView li {
   box-sizing: border-box;
   padding: 150px;
   height: 100vh;
   color: #fff;
   text-align: center;
 }
-body .container ul li .text {
+body .container ul.scrollView li .text {
   padding-top: 20px;
   line-height: 2rem;
 }
-body .container ul li .text p {
+body .container ul.scrollView li .text p {
   letter-spacing: 2px;
   font-size: 1.6rem;
   font-weight: 700;
 }
-body .container ul li .bigText {
+body .container ul.scrollView li .bigText {
   padding-top: 50px;
   letter-spacing: 4px;
   font-size: 12.8rem;
   font-weight: 600;
 }
-body .container ul li .bigText p:last-child {
+body .container ul.scrollView li .bigText p:last-child {
   position: relative;
   z-index: 10;
 }
-body .container ul li:nth-child(1) {
+body .container ul.scrollView li:nth-child(1) {
   color: #0066ff;
   background-color: #f3f3f3;
 }
-body .container ul li:nth-child(1) .text h6 {
+body .container ul.scrollView li:nth-child(1) .text h6 {
   color: #777;
 }
-body .container ul li:nth-child(1) img {
+body .container ul.scrollView li:nth-child(1) img {
   position: fixed;
-  width: 200px;
+  width: 240px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-body .container ul li:nth-child(2) {
+body .container ul.scrollView li:nth-child(1) img.active {
+  animation: samdasooHide 2s;
+}
+@keyframes samdasooHide {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+body .container ul.scrollView li:nth-child(2) {
   background-color: #0066ff;
 }
-body .container ul li:nth-child(2) .bigText p {
+body .container ul.scrollView li:nth-child(2) .bigText p {
   text-shadow: 1px 1px 5px grey;
 }
-body .container ul li:nth-child(3) {
+body .container ul.scrollView li:nth-child(3) {
   background-color: #007d00;
 }
-body .container ul li:nth-child(3) .bigText p {
+body .container ul.scrollView li:nth-child(3) .bigText p {
   text-shadow: 1px 1px 5px grey;
 }
-body .container ul li:nth-child(4) {
+body .container ul.scrollView li:nth-child(4) {
   background-image: url("/img/bottom_bg.jpg");
   background-size: cover;
+}
+body .container ul.pageMark {
+  position: fixed;
+  top: 50%;
+  right: 120px;
+  transform: translateY(-50%);
+}
+body .container ul.pageMark li {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid #0066ff;
+  margin-bottom: 24px;
+}
+body .container ul.pageMark li.active {
+  background-color: #0066ff;
+}
+body .container footer {
+  color: #fff;
+  background-color: #111;
+  padding: 50px 180px;
+  position: relative;
+}
+body .container footer ul {
+  display: flex;
+  gap: 12px;
+  padding: 20px 0;
+}
+body .container footer ul.sns {
+  position: absolute;
+  right: 180px;
+  top: 50px;
+}
+body .container footer ul.sns li {
+  font-size: 1.4rem;
+}
+body .container footer address,
+body .container footer .copyright {
+  padding: 4px 0;
+}
+body .container footer img {
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  transform: translateX(-50%);
+  width: 300px;
 }
