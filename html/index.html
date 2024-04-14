@@ -9,11 +9,19 @@
   </head>
   <body>
     <div class="container">
-      <nav>
+      <header>
         <div class="logo"><img src="/img/logo.png" alt="삼다수 로고" /></div>
-
         <div class="menu"><img src="/img/menu_b.png" alt="메뉴바" /></div>
-      </nav>
+      </header>
+      <ul class="nav">
+        <li class="xMark"><i class="fa-solid fa-xmark"></i></li>
+        <li>STORY</li>
+        <li>GREEN</li>
+        <li>NEWS</li>
+        <li>FAQ</li>
+        <li>PRODUCTS</li>
+        <li>EVENT</li>
+      </ul>
       <ul class="scrollView">
         <li class="scroll">
           <div class="text">
@@ -79,10 +87,12 @@
     </div>
 
     <script>
+      let menuImg = document.querySelector(".menu");
+      let nav = document.querySelector(".nav");
+      let logoImg = document.querySelector(".logo");
+
       window.addEventListener("scroll", function () {
         let view = document.querySelectorAll(".scroll");
-        let logoImg = document.querySelector(".logo");
-        let menuImg = document.querySelector(".menu");
         let samdasoo = document.querySelector(".bigText + img");
         let pageMarks = document.querySelectorAll(".pageMark li");
         let scrollPosition = window.scrollY;
@@ -106,15 +116,9 @@
             samdasoo.style.opacity = 1;
           }
         });
-
-        // pageMarks.forEach(function (pageMark) {
-        //   console.log(pageMark);
-        //   if (page >= 1) {
-        //     pageMark.style.borderColor = "#fff";
-        //   } else {
-        //     pageMark.style.borderColor = "#0066ff";
-        //   }
-        // });
+      });
+      menuImg.addEventListener("click", function () {
+        nav.style.display = "block";
       });
     </script>
   </body>
