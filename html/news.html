@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEWS - 제주삼다수</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/06a873e6b2.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrap">
+        <ul class="nav">
+          <div class="logo"><img src="/img/logo.png" alt="삼다수 로고" /></div>
+          <li><a href="">STORY</a></li>
+          <li><a href="">GREEN</a></li>
+          <li><a href="/html/news.html">NEWS</a></li>
+          <li><a href="">FAQ</a></li>
+          <li><a href="">PRODUCTS</a></li>
+          <li><a href="">EVENT</a></li>
+        </ul>
+        <footer></footer>
+      </div>
+    </div>
+
+    <script>
+      $("footer").load("footer.html");
+      let nav = document.querySelector(".nav");
+      let eksMark = document.querySelector(".xMark");
+      let menuImg = document.querySelector(".menu");
+
+      window.addEventListener("scroll", function () {
+        let logoImg = document.querySelector(".logo");
+        let view = document.querySelectorAll(".scroll");
+        let samdasoo = document.querySelector(".bigText + img");
+        let pageMarks = document.querySelectorAll(".pageMark li");
+        let scrollPosition = window.scrollY;
+
+        view.forEach(function () {
+          let viewHeight = view.offsetHeight;
+          let page = Math.floor(scrollPosition / viewHeight);
+          if (page >= 1) {
+            logoImg.innerHTML = `<img src="/img/foot_logo.png" alt="삼다수 로고" />`;
+            menuImg.innerHTML = `<img src="/img/menu_w.png" alt="메뉴바" />`;
+          } else {
+            logoImg.innerHTML = `<img src="/img/logo.png" alt="삼다수 로고" />`;
+            menuImg.innerHTML = `<img src="/img/menu_b.png" alt="메뉴바" />`;
+          }
+
+          if (scrollPosition > 1900) {
+            samdasoo.classList.add("active");
+            samdasoo.style.opacity = 0;
+          } else {
+            samdasoo.style.animationDirection = "reverse";
+            samdasoo.style.opacity = 1;
+          }
+        });
+      });
+
+      menuImg.addEventListener("click", function () {
+        nav.style.display = "block";
+      });
+      eksMark.addEventListener("click", function () {
+        nav.style.display = "none";
+      });
+    </script>
+  </body>
+</html>
