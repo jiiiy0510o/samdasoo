@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  .container {
+    position: relative;
+    ul {
+      position: relative;
+      &.scrollView > li {
+        box-sizing: border-box;
+        padding: 150px;
+        height: 100vh;
+        color: #fff;
+        text-align: center;
+      }
+      &.pageMark {
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    footer {
+      color: #fff;
+      background-color: #111;
+      padding: 50px 180px 120px 180px;
+      position: relative;
+      ul {
+        display: flex;
+        gap: 12px;
+        padding: 20px 0;
+        &.sns {
+          position: absolute;
+          right: 180px;
+          top: 50px;
+          li {
+            font-weight: 700;
+            font-size: 1.4rem;
+          }
+        }
+      }
+      address,
+      .copyright {
+        font-size: 0.78rem;
+        padding: 4px 0;
+      }
+      .logo img {
+        position: absolute;
+        left: 50%;
+        bottom: 32px;
+        transform: translateX(-50%);
+        width: 260px;
+      }
+      .scrollUp {
+        transform: rotate(270deg);
+        letter-spacing: 2px;
+        width: 120px;
+        position: absolute;
+        right: 50px;
+        bottom: 72px;
+        font-size: 0.9rem;
+        animation: keyUp 2s infinite;
+        img {
+          position: absolute;
+          top: 2px;
+          right: -52px;
+        }
+      }
+      @keyframes keyUp {
+        0% {
+          bottom: 88px;
+        }
+        50% {
+          bottom: 110px;
+        }
+        100% {
+          bottom: 88px;
+        }
+      }
+    }
+  }
+}

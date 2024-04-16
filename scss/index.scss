@@ -1,20 +1,5 @@
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  height: 2000px;
-  overflow-x: hidden;
-  ul,
-  li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
   .container {
-    position: relative;
     .wrap {
       header {
         z-index: 3;
@@ -35,13 +20,7 @@ body {
         }
       }
       ul {
-        position: relative;
         &.scrollView li {
-          box-sizing: border-box;
-          padding: 150px;
-          height: 100vh;
-          color: #fff;
-          text-align: center;
           .text {
             padding-top: 20px;
             line-height: 2rem;
@@ -109,10 +88,7 @@ body {
           }
         }
         &.pageMark {
-          position: fixed;
-          top: 50%;
           right: 120px;
-          transform: translateY(-50%);
           li {
             width: 14px;
             height: 14px;
@@ -122,64 +98,6 @@ body {
             &.active {
               background-color: #0066ff;
             }
-          }
-        }
-      }
-      footer {
-        color: #fff;
-        background-color: #111;
-        padding: 50px 180px 120px 180px;
-        position: relative;
-        ul {
-          display: flex;
-          gap: 12px;
-          padding: 20px 0;
-          &.sns {
-            position: absolute;
-            right: 180px;
-            top: 50px;
-            li {
-              font-weight: 700;
-              font-size: 1.4rem;
-            }
-          }
-        }
-        address,
-        .copyright {
-          font-size: 0.78rem;
-          padding: 4px 0;
-        }
-        .logo img {
-          position: absolute;
-          left: 50%;
-          bottom: 32px;
-          transform: translateX(-50%);
-          width: 260px;
-        }
-        .scrollUp {
-          transform: rotate(270deg);
-          letter-spacing: 2px;
-          width: 120px;
-          position: absolute;
-          right: 50px;
-          bottom: 72px;
-          font-size: 0.9rem;
-          animation: keyUp 2s infinite;
-          img {
-            position: absolute;
-            top: 2px;
-            right: -52px;
-          }
-        }
-        @keyframes keyUp {
-          0% {
-            bottom: 88px;
-          }
-          50% {
-            bottom: 110px;
-          }
-          100% {
-            bottom: 88px;
           }
         }
       }
@@ -203,7 +121,6 @@ body {
           position: absolute;
           top: 12px;
           right: 124px;
-
           &::before {
             content: "";
           }

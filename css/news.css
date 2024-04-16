@@ -1,0 +1,95 @@
+@charset "UTF-8";
+.wrap {
+  position: relative;
+}
+.wrap .nav {
+  width: 100%;
+  padding: 50px 180px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  gap: 40px;
+  z-index: 10;
+}
+.wrap .nav li {
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+.wrap .nav li a {
+  padding: 8px;
+}
+.wrap .nav li.logo {
+  position: absolute;
+  left: 180px;
+}
+.wrap .nav li.logo img {
+  width: 200px;
+}
+.wrap .nav li:hover > a {
+  font-weight: 700;
+  border-bottom: 3px solid #0066ff;
+}
+.wrap .bgArea {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: url("/img/news_bg.png");
+}
+.wrap .bgArea .text {
+  color: #fff;
+  font-weight: 300;
+  font-size: 6rem;
+  position: absolute;
+  top: 560px;
+  left: 200px;
+  letter-spacing: 1px;
+  z-index: 10;
+}
+.wrap .bgArea:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0.2;
+  z-index: 3;
+}
+.wrap .pageMark {
+  z-index: 12;
+  color: #666;
+  left: 32px;
+}
+.wrap .pageMark li {
+  padding: 12px 0;
+}
+.wrap .pageMark li a {
+  display: none;
+}
+.wrap .pageMark li a b {
+  margin-right: 8px;
+  color: #0066ff;
+  font-weight: 600;
+}
+.wrap .pageMark li:after {
+  content: "●";
+  color: #333;
+}
+.wrap .scrollView .scroll .collaboArea {
+  display: flex;
+  gap: 100px;
+}
+.wrap .scrollView .scroll .collaboArea section {
+  width: 50%;
+}
+.wrap .scrollView .scroll .collaboArea section article {
+  overflow: hidden;
+}
+.wrap .scrollView .scroll .collaboArea section article:first-child p {
+  background-image: url("/img/news_bugs.png");
+  background-size: cover;
+}
