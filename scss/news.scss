@@ -78,23 +78,68 @@
       }
     }
   }
-  .scrollView {
-    .scroll {
+  .newsView {
+    padding: 100px 0;
+    .news {
+      padding: 0 200px 50px 200px;
       .collaboArea {
         display: flex;
-        gap: 100px;
+        gap: 80px;
         section {
           width: 50%;
           article {
-            overflow: hidden;
-            &:first-child {
-              p {
-                background-image: url("/img/news_bugs.png");
+            padding-bottom: 50px;
+            p {
+              font-size: 1.4rem;
+              font-weight: 500;
+              padding: 4px 0;
+
+              &.img {
+                height: 400px;
+                overflow: hidden;
                 background-size: cover;
+                margin-bottom: 20px;
+              }
+              &.desc {
+                font-size: 1rem;
+                padding-top: 16px;
+                line-height: 1.4rem;
+              }
+            }
+            b {
+              display: inline-block;
+              font-size: 1.6rem;
+              font-weight: 900;
+              padding: 4px 0;
+            }
+          }
+          &:first-child {
+            article {
+              &:first-child {
+                .img {
+                  background-image: url("/img/news_bugs.png");
+                  background-position: center center;
+                }
+              }
+              &:last-child {
+                .img {
+                  background-image: url("/img/news_kakao.png");
+                  background-position: center center;
+                }
               }
             }
           }
+          &:last-child {
+            .img {
+              height: 1008px;
+              background-image: url("/img/news_loopy.jpg");
+              background-position: center center;
+            }
+          }
         }
+      }
+      &:nth-child(2) {
+        background-color: #eee;
       }
     }
   }

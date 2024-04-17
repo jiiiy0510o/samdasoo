@@ -20,7 +20,11 @@ body {
         }
       }
       ul {
-        &.scrollView li {
+        &.scrollView > li {
+          padding: 150px;
+          height: 100vh;
+          color: #fff;
+          text-align: center;
           .text {
             padding-top: 20px;
             line-height: 2rem;

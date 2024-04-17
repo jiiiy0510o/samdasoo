@@ -1,16 +1,24 @@
 body {
   font-family: Arial, sans-serif;
   overflow-x: hidden;
+  h2 {
+    font-weight: 600;
+    font-size: 48px;
+    padding: 8px 0 50px 0;
+  }
+  h4 {
+    font-weight: 500;
+    font-size: 22px;
+  }
+
   .container {
     position: relative;
     ul {
       position: relative;
-      &.scrollView > li {
-        box-sizing: border-box;
-        padding: 150px;
-        height: 100vh;
-        color: #fff;
-        text-align: center;
+      &.scrollView {
+        > li {
+          box-sizing: border-box;
+        }
       }
       &.pageMark {
         position: fixed;

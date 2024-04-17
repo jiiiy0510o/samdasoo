@@ -137,6 +137,15 @@ body {
   font-family: Arial, sans-serif;
   overflow-x: hidden;
 }
+body h2 {
+  font-weight: 600;
+  font-size: 48px;
+  padding: 8px 0 50px 0;
+}
+body h4 {
+  font-weight: 500;
+  font-size: 22px;
+}
 body .container {
   position: relative;
 }
@@ -145,10 +154,6 @@ body .container ul {
 }
 body .container ul.scrollView > li {
   box-sizing: border-box;
-  padding: 150px;
-  height: 100vh;
-  color: #fff;
-  text-align: center;
 }
 body .container ul.pageMark {
   position: fixed;

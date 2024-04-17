@@ -79,17 +79,57 @@
   content: "●";
   color: #333;
 }
-.wrap .scrollView .scroll .collaboArea {
-  display: flex;
-  gap: 100px;
+.wrap .newsView {
+  padding: 100px 0;
 }
-.wrap .scrollView .scroll .collaboArea section {
+.wrap .newsView .news {
+  padding: 0 200px 50px 200px;
+}
+.wrap .newsView .news .collaboArea {
+  display: flex;
+  gap: 80px;
+}
+.wrap .newsView .news .collaboArea section {
   width: 50%;
 }
-.wrap .scrollView .scroll .collaboArea section article {
-  overflow: hidden;
+.wrap .newsView .news .collaboArea section article {
+  padding-bottom: 50px;
 }
-.wrap .scrollView .scroll .collaboArea section article:first-child p {
-  background-image: url("/img/news_bugs.png");
+.wrap .newsView .news .collaboArea section article p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 4px 0;
+}
+.wrap .newsView .news .collaboArea section article p.img {
+  height: 400px;
+  overflow: hidden;
   background-size: cover;
+  margin-bottom: 20px;
+}
+.wrap .newsView .news .collaboArea section article p.desc {
+  font-size: 1rem;
+  padding-top: 16px;
+  line-height: 1.4rem;
+}
+.wrap .newsView .news .collaboArea section article b {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 900;
+  padding: 4px 0;
+}
+.wrap .newsView .news .collaboArea section:first-child article:first-child .img {
+  background-image: url("/img/news_bugs.png");
+  background-position: center center;
+}
+.wrap .newsView .news .collaboArea section:first-child article:last-child .img {
+  background-image: url("/img/news_kakao.png");
+  background-position: center center;
+}
+.wrap .newsView .news .collaboArea section:last-child .img {
+  height: 1008px;
+  background-image: url("/img/news_loopy.jpg");
+  background-position: center center;
+}
+.wrap .newsView .news:nth-child(2) {
+  background-color: #eee;
 }
