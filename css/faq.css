@@ -1,0 +1,39 @@
+.bgArea {
+  background: url("/img/faq_bg.png");
+}
+
+.faqView {
+  background-color: #f2f2f2;
+  padding: 150px 100px;
+}
+.faqView h1 {
+  padding-bottom: 40px;
+}
+.faqView details {
+  padding: 24px 0 24px 100px;
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+.faqView details summary {
+  cursor: default;
+  list-style: none;
+}
+.faqView details p {
+  line-height: 1.6rem;
+  border-top: 1px solid #777;
+  border-bottom: 1px solid #777;
+  font-size: 0.98rem;
+  padding: 24px;
+  color: #777;
+  margin-top: 24px;
+  font-weight: 500;
+}
+.faqView details p b {
+  display: block;
+  font-weight: 900;
+  color: #666;
+  padding-bottom: 20px;
+}
+.faqView details.active summary {
+  color: #0066ff;
+}

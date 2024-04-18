@@ -1,86 +1,168 @@
 body {
   font-family: Arial, sans-serif;
   overflow-x: hidden;
+  h1 {
+    font-weight: 600;
+    font-size: 48px;
+  }
   h2 {
     font-weight: 600;
     font-size: 48px;
     padding: 8px 0 50px 0;
   }
+  h3 {
+    font-weight: 800;
+    font-size: 32px;
+  }
+
   h4 {
     font-weight: 500;
     font-size: 22px;
   }
+  h6 {
+    font-weight: 500;
+    font-size: 16px;
+  }
 
   .container {
     position: relative;
-    ul {
+    .wrap {
       position: relative;
-      &.scrollView {
-        > li {
-          box-sizing: border-box;
-        }
-      }
-      &.pageMark {
-        position: fixed;
-        top: 50%;
-        transform: translateY(-50%);
-      }
-    }
-    footer {
-      color: #fff;
-      background-color: #111;
-      padding: 50px 180px 120px 180px;
-      position: relative;
-      ul {
+      .nav {
+        width: 100%;
+        padding: 50px 180px;
         display: flex;
-        gap: 12px;
-        padding: 20px 0;
-        &.sns {
-          position: absolute;
-          right: 180px;
-          top: 50px;
-          li {
+        align-items: center;
+        justify-content: flex-end;
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        gap: 40px;
+        z-index: 10;
+        li {
+          cursor: pointer;
+          font-size: 1.1rem;
+          a {
+            padding: 8px;
+          }
+          &.logo {
+            position: absolute;
+            left: 180px;
+
+            img {
+              width: 200px;
+            }
+          }
+          &:hover:not(:first-child) > a {
             font-weight: 700;
-            font-size: 1.4rem;
+            border-bottom: 3px solid #0066ff;
           }
         }
       }
-      address,
-      .copyright {
-        font-size: 0.78rem;
-        padding: 4px 0;
-      }
-      .logo img {
-        position: absolute;
-        left: 50%;
-        bottom: 32px;
-        transform: translateX(-50%);
-        width: 260px;
-      }
-      .scrollUp {
-        transform: rotate(270deg);
-        letter-spacing: 2px;
-        width: 120px;
-        position: absolute;
-        right: 50px;
-        bottom: 72px;
-        font-size: 0.9rem;
-        animation: keyUp 2s infinite;
-        img {
+      .bgArea {
+        position: relative;
+        color: #fff;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+
+        .text {
+          font-weight: 300;
+          font-size: 6rem;
           position: absolute;
-          top: 2px;
-          right: -52px;
+          top: 70%;
+          left: 200px;
+          transform: translateY(-50%);
+          letter-spacing: 1px;
+          z-index: 10;
+          i {
+            font-style: italic;
+            display: block;
+          }
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100vh;
+          background-color: #000;
+          opacity: 0.2;
+          z-index: 3;
         }
       }
-      @keyframes keyUp {
-        0% {
-          bottom: 88px;
+      ul:not(.nav) {
+        position: relative;
+        &.scrollView {
+          > li {
+            box-sizing: border-box;
+          }
         }
-        50% {
-          bottom: 110px;
+        &.pageMark {
+          position: fixed;
+          top: 50%;
+          transform: translateY(-50%);
         }
-        100% {
-          bottom: 88px;
+      }
+
+      footer {
+        color: #fff;
+        background-color: #111;
+        padding: 50px 180px 120px 180px;
+        position: relative;
+        ul {
+          display: flex;
+          gap: 12px;
+          padding: 20px 0;
+          &.sns {
+            position: absolute;
+            right: 180px;
+            top: 50px;
+            li {
+              font-weight: 700;
+              font-size: 1.4rem;
+            }
+          }
+        }
+        address,
+        .copyright {
+          font-size: 0.78rem;
+          padding: 4px 0;
+        }
+        .logo img {
+          position: absolute;
+          left: 50%;
+          bottom: 32px;
+          transform: translateX(-50%);
+          width: 260px;
+        }
+        .scrollUp {
+          transform: rotate(270deg);
+          letter-spacing: 2px;
+          width: 120px;
+          position: absolute;
+          right: 50px;
+          bottom: 72px;
+          font-size: 0.9rem;
+          animation: keyUp 2s infinite;
+          img {
+            position: absolute;
+            top: 2px;
+            right: -52px;
+          }
+        }
+        @keyframes keyUp {
+          0% {
+            bottom: 88px;
+          }
+          50% {
+            bottom: 110px;
+          }
+          100% {
+            bottom: 88px;
+          }
         }
       }
     }

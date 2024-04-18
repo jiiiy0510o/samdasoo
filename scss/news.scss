@@ -1,90 +1,34 @@
-.wrap {
-  position: relative;
-  .nav {
-    width: 100%;
-    padding: 50px 180px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    box-sizing: border-box;
-    position: absolute;
-    top: 0;
-    gap: 40px;
-    z-index: 10;
-    li {
-      cursor: pointer;
-      font-size: 1.1rem;
-      a {
-        padding: 8px;
+.bgArea {
+  background: url("/img/news_bg.png");
+}
+.pageMark {
+  z-index: 12;
+  color: #666;
+  left: 32px;
+  li {
+    padding: 12px 0;
+    a {
+      display: none;
+      b {
+        margin-right: 8px;
+        color: #0066ff;
+        font-weight: 600;
       }
-      &.logo {
-        position: absolute;
-        left: 180px;
-
-        img {
-          width: 200px;
-        }
-      }
-      &:hover > a {
-        font-weight: 700;
-        border-bottom: 3px solid #0066ff;
-      }
-    }
-  }
-  .bgArea {
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    background: url("/img/news_bg.png");
-    .text {
-      color: #fff;
-      font-weight: 300;
-      font-size: 6rem;
-      position: absolute;
-      top: 560px;
-      left: 200px;
-      letter-spacing: 1px;
-      z-index: 10;
     }
     &:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100vh;
-      background-color: #000;
-      opacity: 0.2;
-      z-index: 3;
+      content: "●";
+      color: #333;
     }
   }
-  .pageMark {
-    z-index: 12;
-    color: #666;
-    left: 32px;
-    li {
-      padding: 12px 0;
-      a {
-        display: none;
-        b {
-          margin-right: 8px;
-          color: #0066ff;
-          font-weight: 600;
-        }
-      }
-      &:after {
-        content: "●";
-        color: #333;
-      }
-    }
-  }
-  .newsView {
-    padding: 100px 0;
-    .news {
-      padding: 0 200px 50px 200px;
+}
+.newsView {
+  padding: 100px 0;
+  .news {
+    padding: 100px 180px;
+    &:first-child {
       .collaboArea {
         display: flex;
-        gap: 80px;
+        gap: 40px;
         section {
           width: 50%;
           article {
@@ -138,8 +82,90 @@
           }
         }
       }
-      &:nth-child(2) {
-        background-color: #eee;
+    }
+    &:nth-child(2) {
+      background-color: #eee;
+      .slide {
+        padding-left: 30%;
+        h3 {
+          padding-bottom: 20px;
+        }
+        .textWrap {
+          display: flex;
+          gap: 30px;
+          padding-bottom: 20px;
+          > p {
+            width: 600px;
+            font-size: 0.96rem;
+            line-height: 1.3rem;
+            word-break: normal;
+          }
+          .infoWrap {
+            width: 500px;
+            display: flex;
+            flex-wrap: wrap;
+            p {
+              width: 200px;
+              font-size: 0.9rem;
+
+              strong {
+                box-sizing: border-box;
+                background-color: #333;
+                color: #fff;
+                padding: 4px;
+                margin-bottom: 8px;
+                width: 160px;
+                display: block;
+              }
+            }
+          }
+        }
+        .imgWrap {
+          height: 520px;
+          border-top-left-radius: 100px;
+          overflow: hidden;
+        }
+      }
+    }
+    &:last-child {
+      article {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        section {
+          width: 48%;
+          .imgBox {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 70px 70px 0 0;
+            margin-bottom: 20px;
+          }
+          p {
+            font-size: 1.2rem;
+            padding-bottom: 8px;
+          }
+          b {
+            font-size: 1.6rem;
+            font-weight: 600;
+          }
+          h6 {
+            line-height: 1.2rem;
+            padding-top: 12px;
+          }
+          &:first-child .imgBox {
+            background: url("/img/news_01.jpg") center center / cover;
+          }
+          &:nth-child(2) .imgBox {
+            background: url("/img/news02.jpg") center center / cover;
+          }
+          &:nth-child(3) .imgBox {
+            background: url("/img/news03.jpg") center center / cover;
+          }
+          &:last-child .imgBox {
+            background: url("/img/news04.png") center center / cover;
+          }
+        }
       }
     }
   }

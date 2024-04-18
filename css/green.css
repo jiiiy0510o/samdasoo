@@ -1,0 +1,10 @@
+.bgArea {
+  background: url("/img/green_bg.png");
+}
+.bgArea .text {
+  top: 65% !important;
+}
+
+.greenView {
+  background-color: #f2f2f2;
+}
