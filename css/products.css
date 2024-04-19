@@ -1,0 +1,78 @@
+.bgArea {
+  background: url("/img/product_bg.png");
+}
+.bgArea .text {
+  top: 65% !important;
+}
+
+.productView {
+  padding-top: 100px;
+  text-align: center;
+}
+.productView h6 {
+  color: #0066ff;
+}
+.productView h6 + h1 {
+  padding: 50px 0;
+}
+.productView h6 + h1 span {
+  color: #0066ff;
+}
+.productView h1 + p {
+  line-height: 1.4rem;
+}
+.productView .qrList {
+  display: flex;
+  justify-content: center;
+}
+.productView .qrList li {
+  width: 400px;
+  text-align: center;
+  padding: 100px 0;
+}
+.productView .qrList li a {
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  width: 120px;
+  padding: 16px;
+  margin-top: 24px;
+  line-height: 1.2rem;
+  box-shadow: 1px 1px 10px lightgrey;
+}
+.productView table {
+  width: 80%;
+  height: 220px;
+  margin: 0 10%;
+}
+.productView table tr {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.productView table tr:first-child {
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
+.productView table tr th,
+.productView table tr td {
+  vertical-align: middle;
+}
+.productView table + p {
+  padding: 12px 0;
+}
+.productView .bottom_bg {
+  background: url("/img/product_bg2.png") top center/cover;
+  height: 300px;
+  position: relative;
+}
+.productView .bottom_bg h5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-weight: 900;
+  transform: translate(-50%, -50%);
+  line-height: 1.3rem;
+}
+.productView .bottom_bg h5 span {
+  color: #0066ff;
+}
