@@ -1,0 +1,87 @@
+.bgArea {
+  background: url("/img/story_bg.jpg") no-repeat;
+  background-size: cover;
+}
+.bgArea .text {
+  top: 65% !important;
+}
+.bgArea .bgTextWrap {
+  position: absolute;
+  right: 100px;
+  bottom: 100px;
+  width: 300px;
+  z-index: 20;
+  line-height: 1.2rem;
+  padding: 30px 0;
+  word-wrap: wrap;
+}
+.bgArea .bgTextWrap img {
+  width: 200px;
+}
+
+.storyView {
+  padding: 100px 0;
+}
+.storyView h3 {
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.storyView .yearsWrap {
+  padding: 0 180px;
+}
+.storyView .yearsWrap .years {
+  display: flex;
+  justify-content: center;
+}
+.storyView .yearsWrap .years li {
+  width: 100px;
+  text-align: center;
+}
+.storyView .yearsWrap .years li a {
+  font-size: 1.6rem;
+}
+.storyView .brandEssenseWrap .brandEssense {
+  display: flex;
+}
+.storyView .brandEssenseWrap .brandEssense .textWrap {
+  width: 50%;
+  text-align: center;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.storyView .brandEssenseWrap .brandEssense .bgWrap {
+  width: 50%;
+  box-sizing: border-box;
+}
+.storyView .brandEssenseWrap .brandEssense .bgWrap img {
+  width: 100%;
+}
+.storyView .brandEssenseWrap .brandEssense:first-child .bgWrap {
+  background: url(/img/story01.png);
+}
+.storyView .brandEssenseWrap .brandEssense:first-child .textWrap {
+  background-color: #008100;
+  color: #fff;
+}
+.storyView .brandEssenseWrap .brandEssense:nth-child(2) .bgWrap {
+  background: url(/img/story02.png);
+}
+.storyView .brandEssenseWrap .brandEssense:nth-child(2) .textWrap {
+  background-color: #0066ff;
+  color: #fff;
+}
+.storyView .brandEssenseWrap .brandEssense:nth-child(3) .bgWrap {
+  background: url(/img/story03.png);
+}
+.storyView .brandEssenseWrap .brandEssense:nth-child(3) .textWrap {
+  background-color: #f2f2f2;
+  color: #0066ff;
+}
+.storyView .brandEssenseWrap .brandEssense:last-child .bgWrap {
+  background: url(/img/story04.png);
+}
+.storyView .brandEssenseWrap .brandEssense:last-child .textWrap {
+  background-color: #f2f2f2;
+  color: #0066ff;
+}

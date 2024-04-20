@@ -1,0 +1,100 @@
+.bgArea {
+  background: url("/img/story_bg.jpg") no-repeat;
+  background-size: cover;
+  .text {
+    top: 65% !important;
+  }
+  .bgTextWrap {
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+    width: 300px;
+    z-index: 20;
+    line-height: 1.2rem;
+    padding: 30px 0;
+    word-wrap: wrap;
+    img {
+      width: 200px;
+    }
+  }
+}
+.storyView {
+  padding: 100px 0;
+  h3 {
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .yearsWrap {
+    padding: 0 180px;
+    .years {
+      display: flex;
+      justify-content: center;
+      li {
+        width: 100px;
+        text-align: center;
+
+        a {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+  .brandEssenseWrap {
+    .brandEssense {
+      display: flex;
+      .textWrap {
+        width: 50%;
+        text-align: center;
+        padding: 30px;
+        box-sizing: border-box;
+      }
+      .bgWrap {
+        width: 50%;
+        box-sizing: border-box;
+        img {
+          width: 100%;
+        }
+      }
+      &:first-child {
+        .bgWrap {
+          background: url(/img/story01.png);
+        }
+        .textWrap {
+          background-color: #008100;
+          color: #fff;
+        }
+      }
+
+      &:nth-child(2) {
+        .bgWrap {
+          background: url(/img/story02.png);
+        }
+        .textWrap {
+          background-color: #0066ff;
+          color: #fff;
+        }
+      }
+
+      &:nth-child(3) {
+        .bgWrap {
+          background: url(/img/story03.png);
+        }
+        .textWrap {
+          background-color: #f2f2f2;
+          color: #0066ff;
+        }
+      }
+
+      &:last-child {
+        .bgWrap {
+          background: url(/img/story04.png);
+        }
+        .textWrap {
+          background-color: #f2f2f2;
+          color: #0066ff;
+        }
+      }
+    }
+  }
+}
