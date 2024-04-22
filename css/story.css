@@ -35,20 +35,61 @@
   justify-content: center;
 }
 .storyView .yearsWrap .years li {
-  width: 100px;
   text-align: center;
 }
 .storyView .yearsWrap .years li a {
+  padding: 8px 16px;
+  display: inline-block;
+  width: 120px;
   font-size: 1.6rem;
+  border-bottom: 2px solid #ccc;
+}
+.storyView .yearsWrap .year ul {
+  display: flex;
+}
+.storyView .yearsWrap .year ul dt {
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding-bottom: 12px;
 }
 .storyView .brandEssenseWrap .brandEssense {
   display: flex;
 }
 .storyView .brandEssenseWrap .brandEssense .textWrap {
+  background-color: #f2f2f2;
+  color: #0066ff;
   width: 50%;
+  height: 700px;
   text-align: center;
-  padding: 30px;
+  padding: 80px;
   box-sizing: border-box;
+  position: relative;
+}
+.storyView .brandEssenseWrap .brandEssense .textWrap p b {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 300;
+  padding: 12px 0;
+}
+.storyView .brandEssenseWrap .brandEssense .textWrap p:first-child {
+  font-weight: 600;
+}
+.storyView .brandEssenseWrap .brandEssense .textWrap p:nth-child(3) {
+  line-height: 1.6rem;
+}
+.storyView .brandEssenseWrap .brandEssense .textWrap h3 {
+  padding: 100px 0;
+}
+.storyView .brandEssenseWrap .brandEssense .textWrap button {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 12px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: inherit;
+  font-size: 1rem;
 }
 .storyView .brandEssenseWrap .brandEssense .bgWrap {
   width: 50%;
@@ -58,30 +99,28 @@
   width: 100%;
 }
 .storyView .brandEssenseWrap .brandEssense:first-child .bgWrap {
-  background: url(/img/story01.png);
+  background: url("/img/story01.png");
 }
 .storyView .brandEssenseWrap .brandEssense:first-child .textWrap {
   background-color: #008100;
   color: #fff;
 }
 .storyView .brandEssenseWrap .brandEssense:nth-child(2) .bgWrap {
-  background: url(/img/story02.png);
+  background: url("/img/story02.png");
 }
 .storyView .brandEssenseWrap .brandEssense:nth-child(2) .textWrap {
   background-color: #0066ff;
   color: #fff;
 }
 .storyView .brandEssenseWrap .brandEssense:nth-child(3) .bgWrap {
-  background: url(/img/story03.png);
+  background: url("/img/story03.png");
 }
-.storyView .brandEssenseWrap .brandEssense:nth-child(3) .textWrap {
-  background-color: #f2f2f2;
-  color: #0066ff;
+.storyView .brandEssenseWrap .brandEssense:nth-child(3) .textWrap button {
+  border-color: #0066ff;
 }
 .storyView .brandEssenseWrap .brandEssense:last-child .bgWrap {
-  background: url(/img/story04.png);
+  background: url("/img/story04.png");
 }
-.storyView .brandEssenseWrap .brandEssense:last-child .textWrap {
-  background-color: #f2f2f2;
-  color: #0066ff;
+.storyView .brandEssenseWrap .brandEssense:last-child .textWrap button {
+  border-color: #0066ff;
 }

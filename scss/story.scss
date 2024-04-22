@@ -31,11 +31,23 @@
       display: flex;
       justify-content: center;
       li {
-        width: 100px;
         text-align: center;
-
         a {
+          padding: 8px 16px;
+          display: inline-block;
+          width: 120px;
           font-size: 1.6rem;
+          border-bottom: 2px solid #ccc;
+        }
+      }
+    }
+    .year ul {
+      display: flex;
+      dt {
+        font-size: 1.6rem;
+        font-weight: 600;
+        padding-bottom: 12px;
+        dd {
         }
       }
     }
@@ -44,10 +56,42 @@
     .brandEssense {
       display: flex;
       .textWrap {
+        background-color: #f2f2f2;
+        color: #0066ff;
         width: 50%;
+        height: 700px;
         text-align: center;
-        padding: 30px;
+        padding: 80px;
         box-sizing: border-box;
+        position: relative;
+        p {
+          b {
+            display: block;
+            font-size: 1.8rem;
+            font-weight: 300;
+            padding: 12px 0;
+          }
+          &:first-child {
+            font-weight: 600;
+          }
+          &:nth-child(3) {
+            line-height: 1.6rem;
+          }
+        }
+        h3 {
+          padding: 100px 0;
+        }
+        button {
+          position: absolute;
+          bottom: 80px;
+          left: 50%;
+          transform: translateX(-50%);
+          padding: 8px 12px;
+          border: 1px solid #fff;
+          background-color: transparent;
+          color: inherit;
+          font-size: 1rem;
+        }
       }
       .bgWrap {
         width: 50%;
@@ -58,7 +102,7 @@
       }
       &:first-child {
         .bgWrap {
-          background: url(/img/story01.png);
+          background: url("/img/story01.png");
         }
         .textWrap {
           background-color: #008100;
@@ -68,7 +112,7 @@
 
       &:nth-child(2) {
         .bgWrap {
-          background: url(/img/story02.png);
+          background: url("/img/story02.png");
         }
         .textWrap {
           background-color: #0066ff;
@@ -78,21 +122,19 @@
 
       &:nth-child(3) {
         .bgWrap {
-          background: url(/img/story03.png);
+          background: url("/img/story03.png");
         }
-        .textWrap {
-          background-color: #f2f2f2;
-          color: #0066ff;
+        .textWrap button {
+          border-color: #0066ff;
         }
       }
 
       &:last-child {
         .bgWrap {
-          background: url(/img/story04.png);
+          background: url("/img/story04.png");
         }
-        .textWrap {
-          background-color: #f2f2f2;
-          color: #0066ff;
+        .textWrap button {
+          border-color: #0066ff;
         }
       }
     }
