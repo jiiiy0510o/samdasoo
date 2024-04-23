@@ -20,6 +20,7 @@
 }
 
 .storyView {
+  background-color: #f2f2f2;
   padding: 100px 0;
 }
 .storyView h3 {
@@ -56,7 +57,6 @@
   display: flex;
 }
 .storyView .brandEssenseWrap .brandEssense .textWrap {
-  background-color: #f2f2f2;
   color: #0066ff;
   width: 50%;
   height: 700px;
@@ -123,4 +123,57 @@
 }
 .storyView .brandEssenseWrap .brandEssense:last-child .textWrap button {
   border-color: #0066ff;
+}
+.storyView .brandRoad {
+  padding: 100px 150px;
+}
+.storyView .brandRoad h3 {
+  padding: 50px 0;
+}
+.storyView .brandRoad .imgBox {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+.storyView .brandRoad .imgBox .stepText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.storyView .brandRoad .imgBox .stepText li {
+  line-height: 1.2rem;
+  position: absolute;
+}
+.storyView .brandRoad .imgBox .stepText li strong {
+  display: block;
+  font-weight: 900;
+  padding-bottom: 8px;
+}
+.storyView .brandRoad .imgBox .stepText li:first-child {
+  top: 60px;
+  right: 200px;
+}
+.storyView .brandRoad .imgBox .stepText li:nth-child(2) {
+  top: 400px;
+  right: 460px;
+  text-align: right;
+}
+.storyView .brandRoad .imgBox .stepText li:nth-child(3) {
+  top: 740px;
+  left: 320px;
+}
+.storyView .brandRoad .imgBox .stepText li:nth-child(4) {
+  top: 860px;
+  right: 160px;
+}
+.storyView .brandRoad .imgBox .stepText li:nth-child(5) {
+  bottom: 400px;
+  right: 460px;
+  text-align: right;
+}
+.storyView .brandRoad .imgBox .stepText li:last-child {
+  bottom: 80px;
+  left: 0px;
 }

@@ -19,6 +19,7 @@
   }
 }
 .storyView {
+  background-color: #f2f2f2;
   padding: 100px 0;
   h3 {
     font-weight: 500;
@@ -56,7 +57,6 @@
     .brandEssense {
       display: flex;
       .textWrap {
-        background-color: #f2f2f2;
         color: #0066ff;
         width: 50%;
         height: 700px;
@@ -135,6 +135,59 @@
         }
         .textWrap button {
           border-color: #0066ff;
+        }
+      }
+    }
+  }
+  .brandRoad {
+    padding: 100px 150px;
+    h3 {
+      padding: 50px 0;
+    }
+    .imgBox {
+      position: relative;
+      margin: 0 auto;
+      max-width: 1440px;
+      .stepText {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        li {
+          line-height: 1.2rem;
+          position: absolute;
+          strong {
+            display: block;
+            font-weight: 900;
+            padding-bottom: 8px;
+          }
+          &:first-child {
+            top: 60px;
+            right: 200px;
+          }
+          &:nth-child(2) {
+            top: 400px;
+            right: 460px;
+            text-align: right;
+          }
+          &:nth-child(3) {
+            top: 740px;
+            left: 320px;
+          }
+          &:nth-child(4) {
+            top: 860px;
+            right: 160px;
+          }
+          &:nth-child(5) {
+            bottom: 400px;
+            right: 460px;
+            text-align: right;
+          }
+          &:last-child {
+            bottom: 80px;
+            left: 000px;
+          }
         }
       }
     }
