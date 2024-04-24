@@ -37,21 +37,49 @@
 }
 .storyView .yearsWrap .years li {
   text-align: center;
-}
-.storyView .yearsWrap .years li a {
-  padding: 8px 16px;
+  padding: 16px;
   display: inline-block;
-  width: 120px;
-  font-size: 1.6rem;
+  width: 180px;
+  font-weight: 600;
+  font-size: 3rem;
   border-bottom: 2px solid #ccc;
+  color: #ccc;
+  cursor: pointer;
+}
+.storyView .yearsWrap .years li.active {
+  color: #0066ff;
+  border-color: #0066ff;
+}
+.storyView .yearsWrap .year {
+  padding: 50px 0;
+  position: relative;
+  display: none;
 }
 .storyView .yearsWrap .year ul {
   display: flex;
+  line-height: 1.6rem;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 8px;
 }
-.storyView .yearsWrap .year ul dt {
+.storyView .yearsWrap .year ul li {
+  width: 500px;
+}
+.storyView .yearsWrap .year ul li dl dt {
   font-size: 1.6rem;
   font-weight: 600;
   padding-bottom: 12px;
+}
+.storyView .yearsWrap .year ul li dl dd {
+  color: #777;
+}
+.storyView .yearsWrap .year ul li dl dd span {
+  display: inline-block;
+  width: 40px;
+  color: #333;
+}
+.storyView .yearsWrap .year.active {
+  display: block;
 }
 .storyView .brandEssenseWrap .brandEssense {
   display: flex;

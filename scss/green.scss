@@ -6,4 +6,60 @@
 }
 .greenView {
   background-color: #f2f2f2;
+  section {
+    text-align: center;
+    padding: 100px 0;
+    h1 span {
+      color: #0066ff;
+    }
+    &:nth-child(3) {
+      display: flex;
+      justify-content: center;
+      border-radius: 10px;
+      gap: 30px;
+
+      article {
+        width: 480px;
+        border-radius: 30px;
+        overflow: hidden;
+        text-align: start;
+        .imgBox {
+          height: 400px;
+          margin: 0 auto;
+          background-size: cover;
+        }
+        .textBox {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          padding: 30px;
+          background-color: #fff;
+          line-height: 1.6rem;
+          h3 {
+            padding: 20px 0;
+          }
+          .explore {
+            padding: 20px 0;
+            &:after {
+              content: "→";
+            }
+          }
+        }
+        &:first-child .imgBox {
+          background-image: url("/img/green_section_img01.jpg");
+        }
+        &:nth-child(2) .imgBox {
+          background-image: url("/img/green_section_img02.jpg");
+        }
+        &:last-child .imgBox {
+          background-image: url("/img/green_section_img03.jpg");
+        }
+      }
+    }
+  }
+  .bgBox {
+    text-align: center;
+    background: url("/img/green_bg_02.png");
+    height: 500px;
+  }
 }

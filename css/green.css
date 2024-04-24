@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .bgArea {
   background: url("/img/green_bg.png");
 }
@@ -7,4 +8,59 @@
 
 .greenView {
   background-color: #f2f2f2;
+}
+.greenView section {
+  text-align: center;
+  padding: 100px 0;
+}
+.greenView section h1 span {
+  color: #0066ff;
+}
+.greenView section:nth-child(3) {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  gap: 30px;
+}
+.greenView section:nth-child(3) article {
+  width: 480px;
+  border-radius: 30px;
+  overflow: hidden;
+  text-align: start;
+}
+.greenView section:nth-child(3) article .imgBox {
+  height: 400px;
+  margin: 0 auto;
+  background-size: cover;
+}
+.greenView section:nth-child(3) article .textBox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  background-color: #fff;
+  line-height: 1.6rem;
+}
+.greenView section:nth-child(3) article .textBox h3 {
+  padding: 20px 0;
+}
+.greenView section:nth-child(3) article .textBox .explore {
+  padding: 20px 0;
+}
+.greenView section:nth-child(3) article .textBox .explore:after {
+  content: "→";
+}
+.greenView section:nth-child(3) article:first-child .imgBox {
+  background-image: url("/img/green_section_img01.jpg");
+}
+.greenView section:nth-child(3) article:nth-child(2) .imgBox {
+  background-image: url("/img/green_section_img02.jpg");
+}
+.greenView section:nth-child(3) article:last-child .imgBox {
+  background-image: url("/img/green_section_img03.jpg");
+}
+.greenView .bgBox {
+  text-align: center;
+  background: url("/img/green_bg_02.png");
+  height: 500px;
 }
