@@ -6,19 +6,43 @@
 }
 .greenView {
   background-color: #f2f2f2;
-  section {
+  > section {
     text-align: center;
     padding: 100px 0;
-    h1 span {
-      color: #0066ff;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    h1 {
+      line-height: 3.6rem;
+      span {
+        color: #0066ff;
+      }
+    }
+    h5,
+    h6,
+    p {
+      line-height: 1.6rem;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      padding-top: 80px;
+    }
+    img + h3 {
+      padding-top: 30px;
+      font-weight: 300;
+      b {
+        font-weight: 900;
+      }
     }
     &:nth-child(3) {
       display: flex;
+      flex-direction: row;
       justify-content: center;
       border-radius: 10px;
       gap: 30px;
 
-      article {
+      > article {
         width: 480px;
         border-radius: 30px;
         overflow: hidden;
@@ -60,6 +84,71 @@
   .bgBox {
     text-align: center;
     background: url("/img/green_bg_02.png");
-    height: 500px;
+    background-repeat: no-repeat;
+    height: 760px;
+    padding-top: 100px;
+    box-sizing: border-box;
+    margin: 150px 0;
+    h6 {
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+    h6,
+    h1 span {
+      color: #247c17;
+    }
+    &.two {
+      background-repeat: no-repeat;
+      background: url("/img/green_bg_03.png");
+      h6,
+      h1 span {
+        color: #0066ff;
+      }
+    }
+  }
+  .bgBox ~ article {
+    width: 100%;
+    display: flex;
+    padding: 100px 0;
+    .textWrap {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      gap: 30px;
+      width: 600px;
+      padding: 0 80px;
+      h2 {
+        line-height: 3.6rem;
+        font-weight: 900;
+      }
+      div {
+        height: 3px;
+        background-color: #247c17;
+      }
+      div + p {
+        line-height: 2rem;
+        font-size: 1.4rem;
+        b {
+          font-weight: 900;
+        }
+      }
+      button {
+        position: absolute;
+        bottom: 0;
+        width: calc(100% - 160px);
+        height: 50px;
+        font-weight: 600;
+        border: 2px solid #000;
+        &:hover a {
+          border-bottom: 2px solid #333;
+        }
+      }
+    }
+    .bg {
+      overflow: hidden;
+    }
+  }
+  .two ~ article .textWrap div {
+    background-color: #0066ff;
   }
 }

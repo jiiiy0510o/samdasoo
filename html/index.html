@@ -105,10 +105,14 @@
       });
 
       menuImg.addEventListener("click", function () {
-        nav.style.display = "block";
+        nav.classList.add("active");
+        $(".wrap").hide();
+        $("footer").hide();
       });
       eksMark.addEventListener("click", function () {
-        nav.style.display = "none";
+        nav.classList.remove("active");
+        $(".wrap").show();
+        $("footer").show();
       });
     </script>
   </body>
