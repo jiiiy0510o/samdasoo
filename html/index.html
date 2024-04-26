@@ -77,15 +77,30 @@
       let menuImg = document.querySelector(".menu");
 
       window.addEventListener("scroll", function () {
+        let texts = document.querySelectorAll(".text");
         let logoImg = document.querySelector(".logo");
-        let view = document.querySelectorAll(".scroll");
+        let views = document.querySelectorAll(".scroll");
         let samdasoo = document.querySelector(".bigText + img");
         let pageMarks = document.querySelectorAll(".pageMark li");
         let scrollPosition = window.scrollY;
+        let windowHeight = window.innerHeight;
 
-        view.forEach(function () {
+        views.forEach((view, index) => {
+          let viewTop = view.offsetTop;
           let viewHeight = view.offsetHeight;
+
           let page = Math.floor(scrollPosition / viewHeight);
+          console.log(page + 0.1 < scrollPosition / viewHeight);
+          if (page + 0.1 < scrollPosition / viewHeight) {
+            texts.forEach((text) => {
+              text.classList.add("active");
+            });
+          } else {
+            texts.forEach((text) => {
+              text.classList.remove("active");
+            });
+          }
+
           if (page >= 1) {
             logoImg.innerHTML = `<img src="/img/foot_logo.png" alt="삼다수 로고" />`;
             menuImg.innerHTML = `<img src="/img/menu_w.png" alt="메뉴바" />`;
@@ -96,23 +111,17 @@
 
           if (scrollPosition > 1900) {
             samdasoo.classList.add("active");
-            samdasoo.style.opacity = 0;
           } else {
-            samdasoo.style.animationDirection = "reverse";
-            samdasoo.style.opacity = 1;
+            samdasoo.classList.remove("active");
           }
         });
       });
 
       menuImg.addEventListener("click", function () {
         nav.classList.add("active");
-        $(".wrap").hide();
-        $("footer").hide();
       });
       eksMark.addEventListener("click", function () {
         nav.classList.remove("active");
-        $(".wrap").show();
-        $("footer").show();
       });
     </script>
   </body>

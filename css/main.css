@@ -174,7 +174,8 @@ body .container .wrap .nav {
   position: fixed;
   gap: 40px;
   z-index: 10;
-  background-color: #fff;
+  background-color: transparent;
+  transition: padding 0.5s ease;
 }
 body .container .wrap .nav li {
   cursor: pointer;
@@ -193,6 +194,12 @@ body .container .wrap .nav li.logo img {
 body .container .wrap .nav li:hover:not(:first-child) > a {
   font-weight: 700;
   border-bottom: 3px solid #0066ff;
+}
+body .container .wrap .nav.active {
+  background-color: #fff;
+  opacity: 0.8;
+  padding: 32px 180px;
+  box-shadow: 0px 0px 10px 1px lightgrey;
 }
 body .container .wrap .bgArea {
   position: relative;

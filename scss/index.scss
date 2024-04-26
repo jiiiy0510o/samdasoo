@@ -28,10 +28,15 @@ body {
           .text {
             padding-top: 20px;
             line-height: 2rem;
+            opacity: 0;
+            transition: opacity 0.5s ease;
             p {
               letter-spacing: 2px;
               font-size: 1.6rem;
               font-weight: 700;
+            }
+            &.active {
+              opacity: 1;
             }
           }
           .bigText {
@@ -49,6 +54,7 @@ body {
           &:nth-child(1) {
             color: #0066ff;
             background-color: #f3f3f3;
+
             .text h6 {
               color: #777;
             }
@@ -57,19 +63,10 @@ body {
               width: 240px;
               top: 50%;
               left: 50%;
+              display: block;
               transform: translate(-50%, -50%);
+              transition: opacity 0.3s ease;
               &.active {
-                animation: samdasooHide 2s;
-              }
-            }
-            @keyframes samdasooHide {
-              0% {
-                opacity: 1;
-              }
-              50% {
-                opacity: 0.5;
-              }
-              100% {
                 opacity: 0;
               }
             }
@@ -107,26 +104,28 @@ body {
       }
     }
     .nav {
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 100%;
       z-index: 100;
-      background-color: #0066ff;
+      background: url("/img/blue_bg.png");
       color: #fff;
       width: 100%;
       height: 100%;
-      padding: 100px 50px;
-      transition: left 0.6s ease-in-out;
+      transition: left 0.6s ease-in;
       box-sizing: border-box;
+      padding-left: 30%;
+      padding-top: 200px;
       li {
         cursor: pointer;
-        font-size: 1.72rem;
-        padding: 16px 0;
+        font-size: 3rem;
+        padding: 28px 0;
+        position: relative;
         &:first-child {
           position: absolute;
           top: 12px;
           right: 124px;
-          &::before {
+          &:before {
             content: "";
           }
         }
@@ -135,7 +134,10 @@ body {
         }
         &:before {
           content: "●";
-          font-size: 0.86rem;
+          font-size: 1.2rem;
+          position: absolute;
+          top: 40%;
+          left: -24px;
           padding-right: 8px;
         }
       }

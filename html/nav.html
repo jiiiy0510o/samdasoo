@@ -6,3 +6,14 @@
 <li><a href="/html/news.html">NEWS</a></li>
 <li><a href="/html/faq.html">FAQ</a></li>
 <li><a href="/html/products.html">PRODUCTS</a></li>
+
+<script>
+  let navBar = document.querySelector(".nav");
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 600) {
+      navBar.classList.add("active");
+    } else {
+      navBar.classList.remove("active");
+    }
+  });
+</script>
