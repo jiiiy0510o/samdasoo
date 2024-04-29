@@ -3,13 +3,13 @@
   background-size: cover;
 }
 .bgArea .text {
-  top: 65% !important;
+  top: 60% !important;
 }
 .bgArea .bgTextWrap {
   position: absolute;
   right: 100px;
   bottom: 100px;
-  width: 300px;
+  width: 600px;
   z-index: 20;
   line-height: 1.2rem;
   padding: 30px 0;
@@ -17,6 +17,10 @@
 }
 .bgArea .bgTextWrap img {
   width: 200px;
+  padding-bottom: 12px;
+}
+.bgArea .bgTextWrap p {
+  line-height: 1.4rem;
 }
 
 .storyView {
@@ -92,6 +96,9 @@
   padding: 80px;
   box-sizing: border-box;
   position: relative;
+}
+.storyView .brandEssenseWrap .brandEssense .textWrap p {
+  animation: showDown 1s;
 }
 .storyView .brandEssenseWrap .brandEssense .textWrap p b {
   display: block;

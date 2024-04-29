@@ -90,7 +90,9 @@
           let viewHeight = view.offsetHeight;
 
           let page = Math.floor(scrollPosition / viewHeight);
+
           console.log(page + 0.1 < scrollPosition / viewHeight);
+
           if (page + 0.1 < scrollPosition / viewHeight) {
             texts.forEach((text) => {
               text.classList.add("active");
