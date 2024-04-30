@@ -61,7 +61,10 @@
         <footer></footer>
       </div>
       <ul class="nav">
-        <li class="xMark"><i class="fa-solid fa-xmark"></i></li>
+        <div class="navHeader">
+          <img src="/img/foot_logo.png" alt="삼다수로고" />
+          <i class="fa-solid fa-xmark"></i>
+        </div>
         <li><a href="/html/story.html">STORY</a></li>
         <li><a href="/html/green.html">GREEN</a></li>
         <li><a href="/html/news.html">NEWS</a></li>
@@ -90,9 +93,7 @@
           let viewHeight = view.offsetHeight;
 
           let page = Math.floor(scrollPosition / viewHeight);
-
-          console.log(page + 0.1 < scrollPosition / viewHeight);
-
+          console.log(page);
           if (page + 0.1 < scrollPosition / viewHeight) {
             texts.forEach((text) => {
               text.classList.add("active");
@@ -106,11 +107,28 @@
           if (page >= 1) {
             logoImg.innerHTML = `<img src="/img/foot_logo.png" alt="삼다수 로고" />`;
             menuImg.innerHTML = `<img src="/img/menu_w.png" alt="메뉴바" />`;
+            pageMarks.forEach((pageMark, i) => {
+              if (i === page) {
+                pageMark.style.borderColor = "#fff";
+                pageMark.style.backgroundColor = "#fff";
+              } else {
+                pageMark.style.borderColor = "#fff";
+                pageMark.style.backgroundColor = "transparent";
+              }
+            });
           } else {
             logoImg.innerHTML = `<img src="/img/logo.png" alt="삼다수 로고" />`;
             menuImg.innerHTML = `<img src="/img/menu_b.png" alt="메뉴바" />`;
+            pageMarks.forEach((pageMark, i) => {
+              if (i == 0) {
+                pageMark.style.borderColor = "#0066ff";
+                pageMark.style.backgroundColor = "#0066ff";
+              } else {
+                pageMark.style.borderColor = "#0066ff";
+                pageMark.style.backgroundColor = "transparent";
+              }
+            });
           }
-
           if (scrollPosition > 1900) {
             samdasoo.classList.add("active");
           } else {

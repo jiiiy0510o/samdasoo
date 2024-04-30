@@ -117,8 +117,10 @@ body {
       footer {
         color: #fff;
         background-color: #111;
+        min-height: 200px;
         padding: 50px 180px 120px 180px;
         position: relative;
+        transition: all 0.8s ease;
         ul {
           display: flex;
           gap: 12px;
@@ -126,7 +128,7 @@ body {
           &.sns {
             position: absolute;
             right: 180px;
-            top: 50px;
+            top: 20px;
             li {
               font-weight: 700;
               font-size: 1.4rem;
@@ -135,8 +137,11 @@ body {
         }
         address,
         .copyright {
-          font-size: 0.78rem;
+          font-size: 0.82rem;
           padding: 4px 0;
+        }
+        address p {
+          line-height: 1.6rem;
         }
         .logo img {
           position: absolute;

@@ -247,8 +247,10 @@ body .container .wrap ul:not(.nav).pageMark {
 body .container .wrap footer {
   color: #fff;
   background-color: #111;
+  min-height: 200px;
   padding: 50px 180px 120px 180px;
   position: relative;
+  transition: all 0.8s ease;
 }
 body .container .wrap footer ul {
   display: flex;
@@ -258,7 +260,7 @@ body .container .wrap footer ul {
 body .container .wrap footer ul.sns {
   position: absolute;
   right: 180px;
-  top: 50px;
+  top: 20px;
 }
 body .container .wrap footer ul.sns li {
   font-weight: 700;
@@ -266,8 +268,11 @@ body .container .wrap footer ul.sns li {
 }
 body .container .wrap footer address,
 body .container .wrap footer .copyright {
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   padding: 4px 0;
+}
+body .container .wrap footer address p {
+  line-height: 1.6rem;
 }
 body .container .wrap footer .logo img {
   position: absolute;
