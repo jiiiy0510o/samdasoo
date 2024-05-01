@@ -18,6 +18,7 @@
       padding-bottom: 12px;
     }
     p {
+      width: 600px;
       line-height: 1.4rem;
     }
   }
@@ -42,13 +43,21 @@
         width: 180px;
         font-weight: 600;
         font-size: 3rem;
-        border-bottom: 2px solid #ccc;
         color: #ccc;
         cursor: pointer;
         &.active {
+          z-index: 3;
+          border-bottom: 2px solid #0066ff;
           color: #0066ff;
           border-color: #0066ff;
         }
+      }
+      &:before {
+        content: "";
+        border: 1px solid #ccc;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
       }
     }
     .year {
@@ -223,6 +232,60 @@
           }
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .bgArea {
+    .text {
+      font-size: 4.2rem !important;
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .bgArea {
+    .text {
+      font-size: 3rem !important;
+      left: 100px !important;
+      top: 42% !important;
+    }
+    .bgTextWrap {
+      font-size: 0.8rem !important;
+      left: 100px !important;
+      img {
+        width: 120px !important;
+      }
+      p {
+        width: 400px;
+      }
+    }
+  }
+  .storyView {
+    .yearsWrap {
+      padding: 0 40px;
+      .years {
+        width: 100%;
+        justify-content: center;
+        li {
+          width: 80px;
+          font-size: 1.6rem !important;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .bgArea {
+    .text {
+      font-size: 4rem;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .bgArea {
+    .text {
+      font-size: 4rem;
     }
   }
 }

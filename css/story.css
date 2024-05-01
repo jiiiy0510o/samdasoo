@@ -20,6 +20,7 @@
   padding-bottom: 12px;
 }
 .bgArea .bgTextWrap p {
+  width: 600px;
   line-height: 1.4rem;
 }
 
@@ -46,13 +47,21 @@
   width: 180px;
   font-weight: 600;
   font-size: 3rem;
-  border-bottom: 2px solid #ccc;
   color: #ccc;
   cursor: pointer;
 }
 .storyView .yearsWrap .years li.active {
+  z-index: 3;
+  border-bottom: 2px solid #0066ff;
   color: #0066ff;
   border-color: #0066ff;
+}
+.storyView .yearsWrap .years:before {
+  content: "";
+  border: 1px solid #ccc;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 .storyView .yearsWrap .year {
   padding: 50px 0;
@@ -211,4 +220,48 @@
 .storyView .brandRoad .imgBox .stepText li:last-child {
   bottom: 80px;
   left: 0px;
+}
+
+@media screen and (max-width: 1200px) {
+  .bgArea .text {
+    font-size: 4.2rem !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .bgArea .text {
+    font-size: 3rem !important;
+    left: 100px !important;
+    top: 42% !important;
+  }
+  .bgArea .bgTextWrap {
+    font-size: 0.8rem !important;
+    left: 100px !important;
+  }
+  .bgArea .bgTextWrap img {
+    width: 120px !important;
+  }
+  .bgArea .bgTextWrap p {
+    width: 400px;
+  }
+  .storyView .yearsWrap {
+    padding: 0 40px;
+  }
+  .storyView .yearsWrap .years {
+    width: 100%;
+    justify-content: center;
+  }
+  .storyView .yearsWrap .years li {
+    width: 80px;
+    font-size: 1.6rem !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  .bgArea .text {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .bgArea .text {
+    font-size: 4rem;
+  }
 }
