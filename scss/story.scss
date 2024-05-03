@@ -138,13 +138,19 @@
       .bgWrap {
         width: 50%;
         box-sizing: border-box;
-        img {
+        &:after {
+          content: "";
+          background: rgba(0, 0, 0, 0.2);
+          z-index: 1;
           width: 100%;
+          height: 100%;
+          display: block;
         }
       }
       &:first-child {
         .bgWrap {
-          background: url("/img/story01.png");
+          background: url("/img/story01.png") no-repeat;
+          background-size: cover;
         }
         .textWrap {
           background-color: #008100;
@@ -154,7 +160,8 @@
 
       &:nth-child(2) {
         .bgWrap {
-          background: url("/img/story02.png");
+          background: url("/img/story02.png") no-repeat;
+          background-size: cover;
         }
         .textWrap {
           background-color: #0066ff;
@@ -164,7 +171,8 @@
 
       &:nth-child(3) {
         .bgWrap {
-          background: url("/img/story03.png");
+          background: url("/img/story03.png") no-repeat;
+          background-size: cover;
         }
         .textWrap button {
           border-color: #0066ff;
@@ -173,7 +181,8 @@
 
       &:last-child {
         .bgWrap {
-          background: url("/img/story04.png");
+          background: url("/img/story04.png") no-repeat;
+          background-size: cover;
         }
         .textWrap button {
           border-color: #0066ff;
@@ -242,6 +251,13 @@
       font-size: 4.2rem !important;
     }
   }
+  .storyView {
+    .brandRoad {
+      img {
+        width: 100%;
+      }
+    }
+  }
 }
 @media screen and (max-width: 1000px) {
   .bgArea {
@@ -271,6 +287,32 @@
           width: 80px;
           font-size: 1.6rem !important;
         }
+      }
+    }
+    .brandEssense {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      .textWrap {
+        width: 100% !important;
+        text-align: center;
+        position: absolute !important;
+        background-color: transparent !important;
+      }
+      .bgWrap {
+        width: 100% !important;
+      }
+      &:nth-child(3) .textWrap,
+      &:nth-child(4) .textWrap,
+      &:nth-child(3) .textWrap button,
+      &:nth-child(4) .textWrap button {
+        border-color: #fff !important;
+        color: #fff !important;
+      }
+    }
+    .brandRoad {
+      img {
+        width: 100%;
       }
     }
   }
