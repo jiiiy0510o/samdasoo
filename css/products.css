@@ -5,28 +5,27 @@
   top: 65% !important;
 }
 
-.productView {
-  padding-top: 100px;
+.content {
   text-align: center;
 }
-.productView h6 {
+.content h6 {
   color: #0066ff;
 }
-.productView h6 + h1 {
+.content h6 + h1 {
   padding: 50px 0;
   line-height: 3.6rem;
 }
-.productView h6 + h1 span {
+.content h6 + h1 span {
   color: #0066ff;
 }
-.productView h1 + p {
+.content h1 + p {
   line-height: 1.4rem;
 }
-.productView .qrList {
+.content .qrList {
   display: flex;
   justify-content: center;
 }
-.productView .qrList li {
+.content .qrList li {
   width: 400px;
   text-align: center;
   padding: 100px 0;
@@ -34,7 +33,7 @@
   flex-direction: column;
   align-items: center;
 }
-.productView .qrList li a {
+.content .qrList li a {
   display: block;
   border: 1px solid #ddd;
   border-radius: 20px;
@@ -44,38 +43,38 @@
   line-height: 1.2rem;
   box-shadow: 1px 1px 10px lightgrey;
 }
-.productView h3 span {
+.content h3 span {
   color: #0066ff;
 }
-.productView table {
+.content table {
   width: 60%;
   height: 220px;
   margin: 30px 20%;
 }
-.productView table tr {
+.content table tr {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
-.productView table tr:first-child {
+.content table tr:first-child {
   border-top: 2px solid #ccc;
   border-bottom: 2px solid #ccc;
 }
-.productView table tr th,
-.productView table tr td {
+.content table tr th,
+.content table tr td {
   vertical-align: middle;
 }
-.productView table + p {
+.content table + p {
   padding: 12px 0;
 }
-.productView .samdasooImg {
+.content .samdasooImg {
   background: linear-gradient(to top, #f0f7ff 60%, transparent 50%);
 }
-.productView .bottom_bg {
+.content .bottom_bg {
   background: url("/img/product_bg2.png") top center/cover;
   height: 300px;
   position: relative;
 }
-.productView .bottom_bg h3 {
+.content .bottom_bg h3 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -83,6 +82,6 @@
   transform: translate(-50%, -50%);
   line-height: 3.2rem;
 }
-.productView .bottom_bg h3 span {
+.content .bottom_bg h3 span {
   color: #0066ff;
 }

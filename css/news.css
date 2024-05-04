@@ -24,87 +24,81 @@
   color: #333;
 }
 
-.newsView {
-  padding: 100px 0;
-}
-.newsView .news {
-  padding: 100px 180px;
-}
-.newsView .news:first-child .collaboArea {
+.content .news:first-child .collaboArea {
   display: flex;
   gap: 40px;
 }
-.newsView .news:first-child .collaboArea section {
+.content .news:first-child .collaboArea section {
   width: 50%;
 }
-.newsView .news:first-child .collaboArea section article {
+.content .news:first-child .collaboArea section article {
   padding-bottom: 50px;
 }
-.newsView .news:first-child .collaboArea section article p {
+.content .news:first-child .collaboArea section article p {
   font-size: 1.4rem;
   font-weight: 500;
   padding: 4px 0;
 }
-.newsView .news:first-child .collaboArea section article p.img {
+.content .news:first-child .collaboArea section article p.img {
   height: 400px;
   overflow: hidden;
   background-size: cover;
   margin-bottom: 20px;
 }
-.newsView .news:first-child .collaboArea section article p.desc {
+.content .news:first-child .collaboArea section article p.desc {
   font-size: 1rem;
   padding-top: 16px;
   line-height: 1.4rem;
 }
-.newsView .news:first-child .collaboArea section article b {
+.content .news:first-child .collaboArea section article b {
   display: inline-block;
   font-size: 1.6rem;
   font-weight: 900;
   padding: 4px 0;
 }
-.newsView .news:first-child .collaboArea section:first-child article:first-child .img {
+.content .news:first-child .collaboArea section:first-child article:first-child .img {
   background-image: url("/img/news_bugs.png");
   background-position: center center;
 }
-.newsView .news:first-child .collaboArea section:first-child article:last-child .img {
+.content .news:first-child .collaboArea section:first-child article:last-child .img {
   background-image: url("/img/news_kakao.png");
   background-position: center center;
 }
-.newsView .news:first-child .collaboArea section:last-child .img {
+.content .news:first-child .collaboArea section:last-child .img {
   height: 1008px;
   background-image: url("/img/news_loopy.jpg");
   background-position: center center;
 }
-.newsView .news:nth-child(2) {
+.content .news:nth-child(2) {
   background-color: #eee;
 }
-.newsView .news:nth-child(2) .slide {
+.content .news:nth-child(2) .slide {
   padding-left: 30%;
 }
-.newsView .news:nth-child(2) .slide h3 {
+.content .news:nth-child(2) .slide h3 {
   padding-bottom: 20px;
 }
-.newsView .news:nth-child(2) .slide .textWrap {
+.content .news:nth-child(2) .slide .textWrap {
   display: flex;
   gap: 30px;
   padding-bottom: 20px;
 }
-.newsView .news:nth-child(2) .slide .textWrap > p {
+.content .news:nth-child(2) .slide .textWrap > p {
   width: 600px;
   font-size: 0.96rem;
   line-height: 1.3rem;
   word-break: normal;
 }
-.newsView .news:nth-child(2) .slide .textWrap .infoWrap {
+.content .news:nth-child(2) .slide .textWrap .infoWrap {
   width: 500px;
   display: flex;
   flex-wrap: wrap;
 }
-.newsView .news:nth-child(2) .slide .textWrap .infoWrap p {
+.content .news:nth-child(2) .slide .textWrap .infoWrap p {
   width: 200px;
   font-size: 0.9rem;
 }
-.newsView .news:nth-child(2) .slide .textWrap .infoWrap p strong {
+.content .news:nth-child(2) .slide .textWrap .infoWrap p strong {
   box-sizing: border-box;
   background-color: #333;
   color: #fff;
@@ -113,47 +107,47 @@
   width: 160px;
   display: block;
 }
-.newsView .news:nth-child(2) .slide .imgWrap {
+.content .news:nth-child(2) .slide .imgWrap {
   height: 520px;
   border-top-left-radius: 100px;
   overflow: hidden;
 }
-.newsView .news:last-child article {
+.content .news:last-child article {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
 }
-.newsView .news:last-child article section {
+.content .news:last-child article section {
   width: 48%;
 }
-.newsView .news:last-child article section .imgBox {
+.content .news:last-child article section .imgBox {
   width: 100%;
   height: 300px;
   overflow: hidden;
   border-radius: 70px 70px 0 0;
   margin-bottom: 20px;
 }
-.newsView .news:last-child article section p {
+.content .news:last-child article section p {
   font-size: 1.2rem;
   padding-bottom: 8px;
 }
-.newsView .news:last-child article section b {
+.content .news:last-child article section b {
   font-size: 1.6rem;
   font-weight: 600;
 }
-.newsView .news:last-child article section h6 {
+.content .news:last-child article section h6 {
   line-height: 1.2rem;
   padding-top: 12px;
 }
-.newsView .news:last-child article section:first-child .imgBox {
+.content .news:last-child article section:first-child .imgBox {
   background: url("/img/news_01.jpg") center center/cover;
 }
-.newsView .news:last-child article section:nth-child(2) .imgBox {
+.content .news:last-child article section:nth-child(2) .imgBox {
   background: url("/img/news02.jpg") center center/cover;
 }
-.newsView .news:last-child article section:nth-child(3) .imgBox {
+.content .news:last-child article section:nth-child(3) .imgBox {
   background: url("/img/news03.jpg") center center/cover;
 }
-.newsView .news:last-child article section:last-child .imgBox {
+.content .news:last-child article section:last-child .imgBox {
   background: url("/img/news04.png") center center/cover;
 }

@@ -6,58 +6,55 @@
   top: 65% !important;
 }
 
-.greenView {
-  background-color: #f2f2f2;
-}
-.greenView > section {
+.content > section {
   text-align: center;
   padding: 100px 0;
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-.greenView > section h1 {
+.content > section h1 {
   line-height: 3.6rem;
 }
-.greenView > section h1 span {
+.content > section h1 span {
   color: #0066ff;
 }
-.greenView > section h5,
-.greenView > section h6,
-.greenView > section p {
+.content > section h5,
+.content > section h6,
+.content > section p {
   line-height: 1.6rem;
 }
-.greenView > section img {
+.content > section img {
   display: block;
   margin: 0 auto;
   padding-top: 80px;
 }
-.greenView > section img + h3 {
+.content > section img + h3 {
   padding-top: 30px;
   font-weight: 300;
 }
-.greenView > section img + h3 b {
+.content > section img + h3 b {
   font-weight: 900;
 }
-.greenView > section:nth-child(3) {
+.content > section:nth-child(3) {
   display: flex;
   flex-direction: row;
   justify-content: center;
   border-radius: 10px;
   gap: 30px;
 }
-.greenView > section:nth-child(3) > article {
+.content > section:nth-child(3) > article {
   width: 480px;
   border-radius: 30px;
   overflow: hidden;
   text-align: start;
 }
-.greenView > section:nth-child(3) > article .imgBox {
+.content > section:nth-child(3) > article .imgBox {
   height: 400px;
   margin: 0 auto;
   background-size: cover;
 }
-.greenView > section:nth-child(3) > article .textBox {
+.content > section:nth-child(3) > article .textBox {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -65,25 +62,25 @@
   background-color: #fff;
   line-height: 1.6rem;
 }
-.greenView > section:nth-child(3) > article .textBox h3 {
+.content > section:nth-child(3) > article .textBox h3 {
   padding: 20px 0;
 }
-.greenView > section:nth-child(3) > article .textBox .explore {
+.content > section:nth-child(3) > article .textBox .explore {
   padding: 20px 0;
 }
-.greenView > section:nth-child(3) > article .textBox .explore:after {
+.content > section:nth-child(3) > article .textBox .explore:after {
   content: "→";
 }
-.greenView > section:nth-child(3) > article:first-child .imgBox {
+.content > section:nth-child(3) > article:first-child .imgBox {
   background-image: url("/img/green_section_img01.jpg");
 }
-.greenView > section:nth-child(3) > article:nth-child(2) .imgBox {
+.content > section:nth-child(3) > article:nth-child(2) .imgBox {
   background-image: url("/img/green_section_img02.jpg");
 }
-.greenView > section:nth-child(3) > article:last-child .imgBox {
+.content > section:nth-child(3) > article:last-child .imgBox {
   background-image: url("/img/green_section_img03.jpg");
 }
-.greenView .bgBox {
+.content .bgBox {
   text-align: center;
   background: url("/img/green_bg_02.png");
   background-repeat: no-repeat;
@@ -92,28 +89,28 @@
   box-sizing: border-box;
   margin: 150px 0;
 }
-.greenView .bgBox h6 {
+.content .bgBox h6 {
   margin-bottom: 20px;
   font-weight: 600;
 }
-.greenView .bgBox h6,
-.greenView .bgBox h1 span {
+.content .bgBox h6,
+.content .bgBox h1 span {
   color: #247c17;
 }
-.greenView .bgBox.two {
+.content .bgBox.two {
   background-repeat: no-repeat;
   background: url("/img/green_bg_03.png");
 }
-.greenView .bgBox.two h6,
-.greenView .bgBox.two h1 span {
+.content .bgBox.two h6,
+.content .bgBox.two h1 span {
   color: #0066ff;
 }
-.greenView .bgBox ~ article {
+.content .bgBox ~ article {
   width: 100%;
   display: flex;
   padding: 100px 0;
 }
-.greenView .bgBox ~ article .textWrap {
+.content .bgBox ~ article .textWrap {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -121,22 +118,22 @@
   width: 600px;
   padding: 0 80px;
 }
-.greenView .bgBox ~ article .textWrap h2 {
+.content .bgBox ~ article .textWrap h2 {
   line-height: 3.6rem;
   font-weight: 900;
 }
-.greenView .bgBox ~ article .textWrap div {
+.content .bgBox ~ article .textWrap div {
   height: 3px;
   background-color: #247c17;
 }
-.greenView .bgBox ~ article .textWrap div + p {
+.content .bgBox ~ article .textWrap div + p {
   line-height: 2rem;
   font-size: 1.4rem;
 }
-.greenView .bgBox ~ article .textWrap div + p b {
+.content .bgBox ~ article .textWrap div + p b {
   font-weight: 900;
 }
-.greenView .bgBox ~ article .textWrap button {
+.content .bgBox ~ article .textWrap button {
   position: absolute;
   bottom: 0;
   width: calc(100% - 160px);
@@ -144,12 +141,12 @@
   font-weight: 600;
   border: 2px solid #000;
 }
-.greenView .bgBox ~ article .textWrap button:hover a {
+.content .bgBox ~ article .textWrap button:hover a {
   border-bottom: 2px solid #333;
 }
-.greenView .bgBox ~ article .bg {
+.content .bgBox ~ article .bg {
   overflow: hidden;
 }
-.greenView .two ~ article .textWrap div {
+.content .two ~ article .textWrap div {
   background-color: #0066ff;
 }

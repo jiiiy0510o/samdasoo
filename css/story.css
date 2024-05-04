@@ -24,23 +24,19 @@
   line-height: 1.4rem;
 }
 
-.storyView {
-  background-color: #f2f2f2;
-  padding: 100px 0;
-}
-.storyView h3 {
+.content h3 {
   font-weight: 500;
   text-align: center;
   margin-bottom: 50px;
 }
-.storyView .yearsWrap {
+.content .yearsWrap {
   padding: 0 180px;
 }
-.storyView .yearsWrap .years {
+.content .yearsWrap .years {
   display: flex;
   justify-content: center;
 }
-.storyView .yearsWrap .years li {
+.content .yearsWrap .years li {
   text-align: center;
   padding: 16px;
   display: inline-block;
@@ -50,54 +46,57 @@
   color: #ccc;
   cursor: pointer;
 }
-.storyView .yearsWrap .years li.active {
+.content .yearsWrap .years li.active {
   z-index: 3;
   border-bottom: 2px solid #0066ff;
   color: #0066ff;
   border-color: #0066ff;
 }
-.storyView .yearsWrap .years:before {
+.content .yearsWrap .years:before {
   content: "";
   border: 1px solid #ccc;
   width: 100%;
   position: absolute;
   bottom: 0;
 }
-.storyView .yearsWrap .year {
-  padding: 50px 0;
+.content .yearsWrap .year {
+  padding: 80px 0;
   position: relative;
   display: none;
+  margin-bottom: 60px;
 }
-.storyView .yearsWrap .year ul {
+.content .yearsWrap .year ul {
   display: flex;
   line-height: 1.6rem;
   margin: 0 auto;
   justify-content: center;
   padding: 8px;
 }
-.storyView .yearsWrap .year ul li {
+.content .yearsWrap .year ul li {
   width: 500px;
 }
-.storyView .yearsWrap .year ul li dl dt {
-  font-size: 1.6rem;
+.content .yearsWrap .year ul li dl dt {
+  font-size: 2rem;
   font-weight: 600;
-  padding-bottom: 12px;
+  padding-bottom: 20px;
 }
-.storyView .yearsWrap .year ul li dl dd {
+.content .yearsWrap .year ul li dl dd {
+  padding: 4px 0;
   color: #777;
 }
-.storyView .yearsWrap .year ul li dl dd span {
+.content .yearsWrap .year ul li dl dd span {
   display: inline-block;
   width: 40px;
   color: #333;
+  font-weight: 600;
 }
-.storyView .yearsWrap .year.active {
+.content .yearsWrap .year.active {
   display: block;
 }
-.storyView .brandEssenseWrap .brandEssense {
+.content .brandEssenseWrap .brandEssense {
   display: flex;
 }
-.storyView .brandEssenseWrap .brandEssense .textWrap {
+.content .brandEssenseWrap .brandEssense .textWrap {
   color: #0066ff;
   width: 50%;
   height: 700px;
@@ -106,25 +105,25 @@
   box-sizing: border-box;
   position: relative;
 }
-.storyView .brandEssenseWrap .brandEssense .textWrap p {
+.content .brandEssenseWrap .brandEssense .textWrap p {
   animation: showDown 1s;
 }
-.storyView .brandEssenseWrap .brandEssense .textWrap p b {
+.content .brandEssenseWrap .brandEssense .textWrap p b {
   display: block;
   font-size: 1.8rem;
   font-weight: 300;
   padding: 12px 0;
 }
-.storyView .brandEssenseWrap .brandEssense .textWrap p:first-child {
+.content .brandEssenseWrap .brandEssense .textWrap p:first-child {
   font-weight: 600;
 }
-.storyView .brandEssenseWrap .brandEssense .textWrap p:nth-child(3) {
+.content .brandEssenseWrap .brandEssense .textWrap p:nth-child(3) {
   line-height: 1.6rem;
 }
-.storyView .brandEssenseWrap .brandEssense .textWrap h3 {
+.content .brandEssenseWrap .brandEssense .textWrap h3 {
   padding: 100px 0;
 }
-.storyView .brandEssenseWrap .brandEssense .textWrap button {
+.content .brandEssenseWrap .brandEssense .textWrap button {
   position: absolute;
   bottom: 80px;
   left: 50%;
@@ -135,11 +134,11 @@
   color: inherit;
   font-size: 1rem;
 }
-.storyView .brandEssenseWrap .brandEssense .bgWrap {
+.content .brandEssenseWrap .brandEssense .bgWrap {
   width: 50%;
   box-sizing: border-box;
 }
-.storyView .brandEssenseWrap .brandEssense .bgWrap:after {
+.content .brandEssenseWrap .brandEssense .bgWrap:after {
   content: "";
   background: rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -147,86 +146,89 @@
   height: 100%;
   display: block;
 }
-.storyView .brandEssenseWrap .brandEssense:first-child .bgWrap {
+.content .brandEssenseWrap .brandEssense:first-child .bgWrap {
   background: url("/img/story01.png") no-repeat;
   background-size: cover;
 }
-.storyView .brandEssenseWrap .brandEssense:first-child .textWrap {
+.content .brandEssenseWrap .brandEssense:first-child .textWrap {
   background-color: #008100;
   color: #fff;
 }
-.storyView .brandEssenseWrap .brandEssense:nth-child(2) .bgWrap {
+.content .brandEssenseWrap .brandEssense:nth-child(2) .bgWrap {
   background: url("/img/story02.png") no-repeat;
   background-size: cover;
 }
-.storyView .brandEssenseWrap .brandEssense:nth-child(2) .textWrap {
+.content .brandEssenseWrap .brandEssense:nth-child(2) .textWrap {
   background-color: #0066ff;
   color: #fff;
 }
-.storyView .brandEssenseWrap .brandEssense:nth-child(3) .bgWrap {
+.content .brandEssenseWrap .brandEssense:nth-child(3) .bgWrap {
   background: url("/img/story03.png") no-repeat;
   background-size: cover;
 }
-.storyView .brandEssenseWrap .brandEssense:nth-child(3) .textWrap button {
+.content .brandEssenseWrap .brandEssense:nth-child(3) .textWrap button {
   border-color: #0066ff;
 }
-.storyView .brandEssenseWrap .brandEssense:last-child .bgWrap {
+.content .brandEssenseWrap .brandEssense:last-child .bgWrap {
   background: url("/img/story04.png") no-repeat;
   background-size: cover;
 }
-.storyView .brandEssenseWrap .brandEssense:last-child .textWrap button {
+.content .brandEssenseWrap .brandEssense:last-child .textWrap button {
   border-color: #0066ff;
 }
-.storyView .brandRoad {
+.content .brandRoad {
   padding: 100px 150px;
 }
-.storyView .brandRoad h3 {
+.content .brandRoad h3 {
   padding: 50px 0;
 }
-.storyView .brandRoad .imgBox {
+.content .brandRoad .imgBox {
   position: relative;
   margin: 0 auto;
   max-width: 1440px;
 }
-.storyView .brandRoad .imgBox .stepText {
+.content .brandRoad .imgBox img {
+  margin: 0 auto;
+}
+.content .brandRoad .imgBox .stepText {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.storyView .brandRoad .imgBox .stepText li {
+.content .brandRoad .imgBox .stepText li {
   line-height: 1.2rem;
   position: absolute;
 }
-.storyView .brandRoad .imgBox .stepText li strong {
+.content .brandRoad .imgBox .stepText li strong {
   display: block;
   font-weight: 900;
   padding-bottom: 8px;
 }
-.storyView .brandRoad .imgBox .stepText li:first-child {
+.content .brandRoad .imgBox .stepText li:first-child {
   top: 60px;
   right: 200px;
 }
-.storyView .brandRoad .imgBox .stepText li:nth-child(2) {
+.content .brandRoad .imgBox .stepText li:nth-child(2) {
   top: 400px;
   right: 460px;
   text-align: right;
 }
-.storyView .brandRoad .imgBox .stepText li:nth-child(3) {
+.content .brandRoad .imgBox .stepText li:nth-child(3) {
   top: 740px;
   left: 320px;
 }
-.storyView .brandRoad .imgBox .stepText li:nth-child(4) {
+.content .brandRoad .imgBox .stepText li:nth-child(4) {
   top: 860px;
   right: 160px;
 }
-.storyView .brandRoad .imgBox .stepText li:nth-child(5) {
+.content .brandRoad .imgBox .stepText li:nth-child(5) {
   bottom: 400px;
   right: 460px;
   text-align: right;
 }
-.storyView .brandRoad .imgBox .stepText li:last-child {
+.content .brandRoad .imgBox .stepText li:last-child {
   bottom: 80px;
   left: 0px;
 }
@@ -235,8 +237,14 @@
   .bgArea .text {
     font-size: 4.2rem !important;
   }
-  .storyView .brandRoad img {
+  .content .brandRoad {
+    padding: 100px 100px;
+  }
+  .content .brandRoad img {
     width: 100%;
+  }
+  .content .stepText li {
+    font-size: 0.9rem;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -255,46 +263,58 @@
   .bgArea .bgTextWrap p {
     width: 400px;
   }
-  .storyView .yearsWrap {
+  .content .yearsWrap {
     padding: 0 40px;
   }
-  .storyView .yearsWrap .years {
+  .content .yearsWrap .years {
     width: 100%;
     justify-content: center;
   }
-  .storyView .yearsWrap .years li {
+  .content .yearsWrap .years li {
     width: 80px;
     font-size: 1.6rem !important;
   }
-  .storyView .brandEssense {
+  .content .brandEssense {
     position: relative;
     width: 100%;
     height: 100vh;
   }
-  .storyView .brandEssense .textWrap {
+  .content .brandEssense .textWrap {
     width: 100% !important;
     text-align: center;
     position: absolute !important;
     background-color: transparent !important;
   }
-  .storyView .brandEssense .bgWrap {
+  .content .brandEssense .bgWrap {
     width: 100% !important;
   }
-  .storyView .brandEssense:nth-child(3) .textWrap, .storyView .brandEssense:nth-child(4) .textWrap, .storyView .brandEssense:nth-child(3) .textWrap button, .storyView .brandEssense:nth-child(4) .textWrap button {
+  .content .brandEssense:nth-child(3) .textWrap, .content .brandEssense:nth-child(4) .textWrap, .content .brandEssense:nth-child(3) .textWrap button, .content .brandEssense:nth-child(4) .textWrap button {
     border-color: #fff !important;
     color: #fff !important;
   }
-  .storyView .brandRoad img {
+  .content .brandRoad {
+    padding: 50px;
+  }
+  .content .brandRoad img {
     width: 100%;
+  }
+  .content .brandRoad .stepText li {
+    font-size: 0.9rem;
   }
 }
 @media screen and (max-width: 700px) {
   .bgArea .text {
     font-size: 4rem;
   }
+  .content .brandRoad {
+    padding: 20px;
+  }
 }
 @media screen and (max-width: 500px) {
   .bgArea .text {
     font-size: 4rem;
+  }
+  .content .brandRoad {
+    padding: 0;
   }
 }

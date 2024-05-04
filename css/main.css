@@ -244,6 +244,10 @@ body .container .wrap ul:not(.nav).pageMark {
   top: 50%;
   transform: translateY(-50%);
 }
+body .container .wrap .content {
+  background-color: #f2f2f2;
+  padding: 150px 0;
+}
 body .container .wrap footer {
   color: #fff;
   background-color: #111;
