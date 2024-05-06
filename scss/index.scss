@@ -160,8 +160,7 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
-  header,
-  footer {
+  header {
     padding: 30px 90px !important;
   }
   .bigText p {
@@ -169,8 +168,7 @@ body {
   }
 }
 @media screen and (max-width: 1000px) {
-  header,
-  footer {
+  header {
     padding: 16px 24px !important;
     .logo img {
       width: 120px !important;
@@ -200,33 +198,17 @@ body {
   .pageMark {
     display: none;
   }
-  footer {
-    p {
-      line-height: 1.1rem !important;
-    }
-    .sns {
-      right: 30px !important;
-    }
-    .scrollUp {
-      display: none;
-    }
-  }
 }
 @media screen and (max-width: 700px) {
-  header,
-  footer {
+  header {
     padding: 16px 24px !important;
   }
   .bigText p {
     font-size: 5.2rem;
   }
-  footer .sns li i {
-    font-size: 1.2rem;
-  }
 }
 @media screen and (max-width: 500px) {
-  header,
-  footer {
+  header {
     padding: 16px 24px !important;
   }
   .bigText p {

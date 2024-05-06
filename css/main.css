@@ -352,3 +352,38 @@ body .container .wrap footer .scrollUp img {
     transform: translateY(0);
   }
 }
+@media screen and (max-width: 1200px) {
+  footer {
+    padding: 30px 90px !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  footer {
+    padding: 16px 24px !important;
+  }
+  footer address p {
+    line-height: 1.1rem !important;
+  }
+  footer .logo img {
+    width: 120px !important;
+  }
+  footer .sns {
+    right: 30px !important;
+  }
+  footer .scrollUp {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  footer {
+    padding: 16px 24px !important;
+  }
+  footer .sns li i {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  footer {
+    padding: 16px 24px !important;
+  }
+}

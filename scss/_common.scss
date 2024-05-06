@@ -225,3 +225,39 @@ body {
     transform: translateY(0);
   }
 }
+
+@media screen and (max-width: 1200px) {
+  footer {
+    padding: 30px 90px !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  footer {
+    padding: 16px 24px !important;
+    address p {
+      line-height: 1.1rem !important;
+    }
+    .logo img {
+      width: 120px !important;
+    }
+    .sns {
+      right: 30px !important;
+    }
+    .scrollUp {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  footer {
+    padding: 16px 24px !important;
+    .sns li i {
+      font-size: 1.2rem;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  footer {
+    padding: 16px 24px !important;
+  }
+}

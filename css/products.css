@@ -6,7 +6,9 @@
 }
 
 .content {
+  background-color: #fff;
   text-align: center;
+  padding-bottom: 0 !important;
 }
 .content h6 {
   color: #0066ff;
@@ -24,6 +26,7 @@
 .content .qrList {
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
 }
 .content .qrList li {
   width: 400px;
@@ -38,9 +41,9 @@
   border: 1px solid #ddd;
   border-radius: 20px;
   width: 120px;
-  padding: 16px;
-  margin-top: 24px;
-  line-height: 1.2rem;
+  padding: 12px 26px;
+  margin-top: 60px;
+  line-height: 1.26rem;
   box-shadow: 1px 1px 10px lightgrey;
 }
 .content h3 span {
@@ -67,7 +70,8 @@
   padding: 12px 0;
 }
 .content .samdasooImg {
-  background: linear-gradient(to top, #f0f7ff 60%, transparent 50%);
+  padding-bottom: 50px;
+  background: linear-gradient(to top, #f0f7ff 64%, transparent 50%);
 }
 .content .bottom_bg {
   background: url("/img/product_bg2.png") top center/cover;
@@ -84,4 +88,20 @@
 }
 .content .bottom_bg h3 span {
   color: #0066ff;
+}
+
+@media screen and (max-width: 1200px) {
+  .bgArea .text {
+    font-size: 4.8rem !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .bgArea .text {
+    font-size: 3.6rem !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  .bgArea .text {
+    font-size: 4rem;
+  }
 }

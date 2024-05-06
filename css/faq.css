@@ -3,12 +3,14 @@
 }
 
 .content h1 {
-  padding-bottom: 40px;
+  padding: 0 40px 40px 40px;
 }
 .content details {
   padding: 24px 0 24px 100px;
   font-size: 1.1rem;
   font-weight: 900;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
 .content details summary {
   cursor: default;
@@ -32,4 +34,43 @@
 }
 .content details.active summary {
   color: #0066ff;
+}
+
+@media screen and (max-width: 1200px) {
+  .bgArea .text {
+    font-size: 4.8rem !important;
+  }
+  .content details {
+    padding: 24px 0 24px 40px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .bgArea .text {
+    font-size: 3rem !important;
+  }
+  .content {
+    padding: 80px 0 !important;
+  }
+  .content h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .content details {
+    padding: 24px 0 24px 40px;
+    font-size: 1rem;
+  }
+  .content details p {
+    font-size: 0.92rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .bgArea .text {
+    font-size: 3rem !important;
+  }
+  .content details {
+    font-size: 0.96rem;
+  }
+  .content details p {
+    font-size: 0.84rem;
+  }
 }
