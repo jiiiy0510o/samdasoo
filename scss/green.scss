@@ -151,101 +151,41 @@
     background-color: #0066ff;
   }
 }
-
-@media screen and (max-width: 1200px) {
-  .bgArea {
-    .text {
-      font-size: 4.2rem !important;
+@media screen and (max-width: 1600px) {
+  .content {
+    .slide {
+      padding-left: 200px !important;
     }
   }
+}
+@media screen and (max-width: 1400px) {
   .content {
-    .brandRoad {
-      padding: 100px 100px;
-      img {
-        width: 100%;
-      }
+    .slide {
+      padding-left: 50px !important;
     }
-    .stepText li {
-      font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .content {
+    .slide {
+      padding-left: 0px !important;
+      .textWrap {
+        > p {
+          width: 440px !important;
+        }
+      }
     }
   }
 }
 @media screen and (max-width: 1000px) {
-  .bgArea {
-    .text {
-      font-size: 3rem !important;
-      left: 100px !important;
-      top: 42% !important;
-    }
-    .bgTextWrap {
-      font-size: 0.8rem !important;
-      left: 100px !important;
-      img {
-        width: 120px !important;
-      }
-      p {
-        width: 400px;
-      }
-    }
+  .pageMark {
+    display: none;
   }
   .content {
-    .yearsWrap {
-      padding: 0 40px;
-      .years {
-        width: 100%;
-        justify-content: center;
-        li {
-          width: 80px;
-          font-size: 1.6rem !important;
-        }
-      }
-    }
-    .brandEssense {
-      position: relative;
-      width: 100%;
-      height: 100vh;
-      .textWrap {
-        width: 100% !important;
-        text-align: center;
-        position: absolute !important;
-        background-color: transparent !important;
-      }
-      .bgWrap {
-        width: 100% !important;
-      }
-      &:nth-child(3) .textWrap,
-      &:nth-child(4) .textWrap,
-      &:nth-child(3) .textWrap button,
-      &:nth-child(4) .textWrap button {
-        border-color: #fff !important;
-        color: #fff !important;
-      }
-    }
-    .brandRoad {
-      padding: 50px;
-      img {
-        width: 100%;
-      }
-      .stepText li {
-        font-size: 0.9rem;
-      }
-    }
+    padding: 0 !important;
   }
 }
 @media screen and (max-width: 700px) {
-  .bgArea {
-    .text {
-      font-size: 4rem;
-    }
-  }
-  .content {
-  }
-}
-@media screen and (max-width: 500px) {
-  .bgArea {
-    .text {
-    }
-  }
   .content {
   }
 }
