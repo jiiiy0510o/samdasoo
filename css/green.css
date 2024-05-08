@@ -11,10 +11,10 @@
   padding: 100px 0;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 50px;
 }
 .content > section h1 {
-  line-height: 3.6rem;
+  line-height: 4rem;
 }
 .content > section h1 span {
   color: #0066ff;
@@ -22,7 +22,7 @@
 .content > section h5,
 .content > section h6,
 .content > section p {
-  line-height: 1.6rem;
+  line-height: 1.4rem;
 }
 .content > section img {
   display: block;
@@ -36,18 +36,24 @@
 .content > section img + h3 b {
   font-weight: 900;
 }
+.content > section .miniTitle {
+  color: #0066ff;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+}
 .content > section:nth-child(3) {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border-radius: 10px;
   gap: 30px;
+  transition: all 0.5s ease-in-out;
 }
 .content > section:nth-child(3) > article {
-  width: 480px;
+  width: 460px;
   border-radius: 30px;
   overflow: hidden;
   text-align: start;
+  transition: display 0.8s ease;
 }
 .content > section:nth-child(3) > article .imgBox {
   height: 400px;
@@ -58,15 +64,18 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 30px;
+  padding: 20px;
   background-color: #fff;
   line-height: 1.6rem;
 }
 .content > section:nth-child(3) > article .textBox h3 {
   padding: 20px 0;
 }
+.content > section:nth-child(3) > article .textBox h5 {
+  height: 80px;
+}
 .content > section:nth-child(3) > article .textBox .explore {
-  padding: 20px 0;
+  padding: 10px;
 }
 .content > section:nth-child(3) > article .textBox .explore:after {
   content: "→";
@@ -82,16 +91,18 @@
 }
 .content .bgBox {
   text-align: center;
-  background: url("/img/green_bg_02.png");
+  background: url("/img/green_bg_02.png") center top/cover;
   background-repeat: no-repeat;
-  height: 760px;
-  padding-top: 100px;
+  height: auto;
+  padding: 120px 0 360px 0;
   box-sizing: border-box;
-  margin: 150px 0;
+  margin: 100px 0;
+  transition: all 0.4s ease-in-out;
 }
 .content .bgBox h6 {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   font-weight: 600;
+  letter-spacing: 1.6px;
 }
 .content .bgBox h6,
 .content .bgBox h1 span {
@@ -111,14 +122,12 @@
   padding: 100px 0;
 }
 .content .bgBox ~ article .textWrap {
-  display: flex;
-  flex-direction: column;
   position: relative;
-  gap: 30px;
   width: 600px;
   padding: 0 80px;
 }
 .content .bgBox ~ article .textWrap h2 {
+  padding-top: 30px;
   line-height: 3.6rem;
   font-weight: 900;
 }
@@ -129,6 +138,7 @@
 .content .bgBox ~ article .textWrap div + p {
   line-height: 2rem;
   font-size: 1.4rem;
+  padding: 30px 0;
 }
 .content .bgBox ~ article .textWrap div + p b {
   font-weight: 900;
@@ -155,10 +165,8 @@
   .content .slide {
     padding-left: 200px !important;
   }
-}
-@media screen and (max-width: 1400px) {
-  .content .slide {
-    padding-left: 50px !important;
+  .content section:nth-child(3) {
+    padding: 60px;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -168,6 +176,16 @@
   .content .slide .textWrap > p {
     width: 440px !important;
   }
+  .content section:nth-child(3) {
+    gap: 15px;
+    padding: 100px 40px;
+  }
+  .content .bgBox ~ article .textWrap {
+    padding: 0 30px;
+  }
+  .content .bgBox ~ article .textWrap button {
+    width: calc(100% - 60px);
+  }
 }
 @media screen and (max-width: 1000px) {
   .pageMark {
@@ -175,5 +193,39 @@
   }
   .content {
     padding: 0 !important;
+  }
+  .content section:nth-child(3) {
+    flex-direction: column;
+  }
+  .content section:nth-child(3) article {
+    width: 100%;
+  }
+  .content section:nth-child(3) article .explore {
+    text-align: end;
+  }
+  .content .bgBox {
+    padding: 80px 0 300px 0;
+  }
+  .content .bgBox h6 {
+    margin-bottom: 20px;
+  }
+  .content .bgBox ~ article {
+    display: block;
+    position: relative;
+  }
+  .content .bgBox ~ article .bg {
+    margin-bottom: 300px;
+  }
+  .content .bgBox ~ article .textWrap {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+  }
+  .content .bgBox ~ article .textWrap h2,
+  .content .bgBox ~ article .textWrap p {
+    padding-bottom: 0;
+    font-size: 1.1rem !important;
+    line-height: 1.2rem !important;
   }
 }
