@@ -37,17 +37,11 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .bgArea .text {
-    font-size: 4.8rem !important;
-  }
   .content details {
     padding: 24px 0 24px 40px;
   }
 }
 @media screen and (max-width: 1000px) {
-  .bgArea .text {
-    font-size: 3rem !important;
-  }
   .content {
     padding: 80px 0 !important;
   }
@@ -64,9 +58,6 @@
   }
 }
 @media screen and (max-width: 700px) {
-  .bgArea .text {
-    font-size: 3rem !important;
-  }
   .content details {
     font-size: 0.96rem;
   }

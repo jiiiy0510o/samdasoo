@@ -89,19 +89,3 @@
 .content .bottom_bg h3 span {
   color: #0066ff;
 }
-
-@media screen and (max-width: 1200px) {
-  .bgArea .text {
-    font-size: 4.8rem !important;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .bgArea .text {
-    font-size: 3.6rem !important;
-  }
-}
-@media screen and (max-width: 700px) {
-  .bgArea .text {
-    font-size: 4rem;
-  }
-}

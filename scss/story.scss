@@ -13,6 +13,7 @@
     line-height: 1.2rem;
     padding: 30px 0;
     word-wrap: wrap;
+    transition: all 1s ease-in-out;
     img {
       width: 200px;
       padding-bottom: 12px;
@@ -251,11 +252,6 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .bgArea {
-    .text {
-      font-size: 4.2rem !important;
-    }
-  }
   .content {
     .brandRoad {
       padding: 100px 100px;
@@ -270,11 +266,6 @@
 }
 @media screen and (max-width: 1000px) {
   .bgArea {
-    .text {
-      font-size: 3rem !important;
-      left: 100px !important;
-      top: 42% !important;
-    }
     .bgTextWrap {
       font-size: 0.8rem !important;
       left: 100px !important;
@@ -332,8 +323,14 @@
 }
 @media screen and (max-width: 700px) {
   .bgArea {
-    .text {
-      font-size: 4rem;
+    .bgTextWrap {
+      left: 50px !important;
+      img {
+        width: 120px !important;
+      }
+      p {
+        width: 400px;
+      }
     }
   }
   .content {
@@ -343,11 +340,6 @@
   }
 }
 @media screen and (max-width: 500px) {
-  .bgArea {
-    .text {
-      font-size: 4rem;
-    }
-  }
   .content {
     .brandRoad {
       padding: 0;
