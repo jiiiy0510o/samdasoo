@@ -152,13 +152,13 @@
         </ul>
         <footer></footer>
       </div>
-      <ul class="nav"></ul>
+      <ul class="navBar"></ul>
     </div>
 
     <script>
-      $(".nav").load("nav.html");
+      $(".navBar").load("navBar.html");
       $("footer").load("footer.html");
-      let nav = document.querySelector(".nav");
+      let navBar = document.querySelector(".navBar");
       let eksMark = document.querySelector(".xMark");
       let menuImg = document.querySelector(".menu");
 
@@ -191,10 +191,10 @@
       });
 
       menuImg.addEventListener("click", function () {
-        nav.style.display = "block";
+        navBar.style.display = "block";
       });
       eksMark.addEventListener("click", function () {
-        nav.style.display = "none";
+        navBar.style.display = "none";
       });
     </script>
   </body>

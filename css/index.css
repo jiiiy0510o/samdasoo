@@ -117,10 +117,10 @@ body .container .nav .navHeader {
   padding: 50px 100px;
   margin-bottom: 50px;
 }
-body .container .nav .navHeader img {
+body .container .nav img {
   width: 200px;
 }
-body .container .nav .navHeader i {
+body .container .nav i {
   font-size: 2rem;
 }
 body .container .nav li {
@@ -128,9 +128,6 @@ body .container .nav li {
   font-size: 3rem;
   padding: 28px 0 28px 280px;
   position: relative;
-}
-body .container .nav li:hover > a {
-  border-bottom: 3px solid #fff;
 }
 body .container .nav li a {
   position: relative;
@@ -142,6 +139,9 @@ body .container .nav li a:before {
   top: 30%;
   left: -28px;
   padding-right: 8px;
+}
+body .container .nav li:hover > a {
+  border-bottom: 3px solid #fff;
 }
 body .container .nav.active {
   height: 100vh;

@@ -123,12 +123,12 @@ body {
         align-items: center;
         padding: 50px 100px;
         margin-bottom: 50px;
-        img {
-          width: 200px;
-        }
-        i {
-          font-size: 2rem;
-        }
+      }
+      img {
+        width: 200px;
+      }
+      i {
+        font-size: 2rem;
       }
       li {
         cursor: pointer;
@@ -136,9 +136,6 @@ body {
         padding: 28px 0 28px 280px;
         position: relative;
 
-        &:hover > a {
-          border-bottom: 3px solid #fff;
-        }
         a {
           position: relative;
           &:before {
@@ -149,6 +146,9 @@ body {
             left: -28px;
             padding-right: 8px;
           }
+        }
+        &:hover > a {
+          border-bottom: 3px solid #fff;
         }
       }
       &.active {
